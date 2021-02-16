@@ -2,7 +2,10 @@
 .projects-section{
     background-color: rgb(255, 255, 255);
     padding: 0px;
-    margin-bottom: 20px;
+    min-height:100px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    display: block;
 }
 
 .projects-section .title{
@@ -27,11 +30,16 @@
 }
 
 .projects-section-panel{
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     background-color: rgb(244, 244, 244);
     border-radius: 14px;
     padding: 0px 20px;
     width:280px;
     height: 330px;
+    margin-bottom: 20px;
   
   }
   
