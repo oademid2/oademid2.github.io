@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<title>👩🏿‍💻 meetkitan</title>
+<link rel = "icon" href ="black_circle.png" type = "image/x-icon"> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="projects.css">
+<style>
+body,h1 {
+  font-family: "Montserrat", sans-serif; 
+  font-family: "PT Sans", Helvetica, sans-serif;
+  font-size: 12px
+}
+
+.website-header{
+  margin-top:60px;
+  margin-bottom:90px;
+}
+
+.socials-header{
+  margin-bottom: 7vw;
+  /*padding-left: 80px;*/
+  /*padding-left: 15vw;*/
+  font-size: 1.8vw;
+}
+
+.website-title-container{
+  /*padding-left: 100px;*/
+  /*padding-left: 15vw;*/
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.website-title{
+  font-size: 100px;
+  font-size: 8vw;
+  line-height: 98%;
+  font-weight: 800;
+}
+
+.website-title-subtitle{
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-size:1.5vw;
+  padding-right: 0.5vw;
+}
+
+.website-title-img{
+  width:55%;
+  width:25vw;
+  margin-left:30px;
+  text-align: center;
+
+
+
+}
+.subline{
+  display: inline;
+  font-size: 30px;
+}
+
+
+.header-panel{
+  width: 100%;
+  display: inline-flex; 
+  justify-content: space-between;
+  margin: auto;
+  height: auto;
+}
+
+.left-header-panel{
+  width:60%;
+  /*background-color:powderblue;*/
+}
+
+.right-header-panel{
+  padding-left: 40px;
+  text-align: left;
+  width:40%;
+}
+
+
+.root{
+  padding-right: 14vw;
+  padding-left: 14vw;
+}
+
+#demo, #demo2{
+  /*background: rgb(255, 80, 238);*/
+  /*background-color: powderblue;
+  background: linear-gradient(90deg, powderblue 70%, #ffffff 30%);
+  background: linear-gradient(90deg, powderblue 30%, #ffffff 70%);
+  background: linear-gradient(180deg, white 50%, powderblue 50%);*/
+  /*background: linear-gradient(90deg, powderblue 30%, #ffffff 70%);*/
+  background-color: rgb(150, 255, 58);
+  padding-right: 12px;
+
+}
+
+#demo2{
+  /*background: linear-gradient(270deg, powderblue 80%, white 20%);*/
+}
+
+.demo-div p{
+  margin-bottom: 30px;
+}
+#demo{
+  padding-right: 14px;
+
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.sidenav {
+
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(5,5,5, 0.95);
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+
+
+  font-size: 200px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.spotify-gif{
+  width:90%;
+}
+
+.icon-header{
+  float:right;
+  text-align: top;
+}
+.icon-header img{
+  width: 60px;
+  opacity:0.8
+}
+
+.project-gif{
+  width:100%;
+}
+
+
+
+
+
+</style>
+
+<body>
+
+  <header>
+  </header>
+  <div id="mySidenav" class="sidenav">
+    
+   <img id="spotify-gif" src="spotify.gif"></img>
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  </div>
+  
+<div class="root">
+  <div class="website-header">
+    <div class="socials-header">
+      <span> 
+       < <a href="https://github.com/oademid2" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+        
+          <a href="https://www.linkedin.com/in/kitan-ademidun/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        | kademidun@hotmail.com />
+      </span>
+
+    </div>
+    <div class="header-panel">
+      <div class="left-header-panel">
+        <div class="website-title-container">
+          <div class="website-title-main">
+            <div class="demo-div">
+              <p><span id="demo" class="website-title">Hey, </span></p>
+            </div>
+            <div>
+              <p><span id="demo2" class="website-title">I'm Kitan.</span></p>
+            </div>
+            
+
+          </div>
+         
+          
+          <div class="website-title-subtitle">
+            Programmer. Documentary & Fintech lover. Agriculture learner. Business and social economics enthusiast. Computer engineering & Business grad.
+          </div>
+  
+        </div>
+        
+  
+      </div>
+      <div class="right-header-panel"> 
+        <img class="website-title-img" src="pic.png"></img>
+      </div>
+    </div>
+  </div>
+  <div class="projects-section">
+    <p class="title"><span>WEB DEVELOPMENT</span></p>
+    <div class="projects-section-row">
+      <div class="projects-section-panel">
+        <div class="project-title section">
+          <p><span>Friends On Spotify</span></p>
+        </div>
+  
+        <div class="section">
+          <img class="project-gif" src="spotify.gif"></img>
+        </div>
+        <div class="caption section">
+          <p>Compare your library with a friend and produces similarity metrics of shared artists & songs. Links to spotify account.</p>
+        </div>
+        <div class="tools section">
+          <span class="tool">react</span>
+          <span class="tool">node.js</span>
+          <span class="tool">mongodb</span>
+          <span class="tool">Javascript</span>
+
+        </div>
+        <div class="prompts">
+    
+          <a onclick="openNav()">
+            preview
+          </a>
+          <a class="btn" target="_blank" href='https://github.com/oademid2/friends-on-spotify'>
+            code
+          </a>
+         
+
+        </div>
+
+  
+      </div>
+      <div class="projects-section-panel">
+        <div class="project-title section">
+          <p>Groups Manager</p>
+        </div>
+  
+        <div class="section">
+          <img class="project-img" src="groups.png"></img>
+        </div>
+        <div class="caption section">
+          <p>Crowd managed platform for connecting with peers. Find group member and automatically create time slots where all members are free. </p>
+        </div>
+        <div class="tools section">
+          <span class="tool">react</span>
+          <span class="tool">CSS</span>
+          <span class="tool">Javascript</span>
+
+        </div>
+        <div class="prompts">
+       
+          <a class="btn" target="_blank" href='https://github.com/oademid2/friends-on-spotify'>
+            code
+          </a>
+        </div>
+
+  
+      </div>
+      <div class="projects-section-panel">
+        <div class="project-title section">
+          <p>Music Review Site</p>
+        </div>
+  
+        <div class="section">
+          <img class="project-img" src="music.png"></img>
+        </div>
+        <div class="caption section">
+          <p>Web app for sharing music reviews. </p>
+        </div>
+        <div class="tools section">
+          <span class="tool">angular</span>
+          <span class="tool">node.js</span>
+          <span class="tool">mongodb</span>
+          <span class="tool">Javascript</span>
+
+        </div>
+        <div class="prompts">
+          <button >
+            prompts
+          </button>
+          <button>
+            prompts
+          </button>
+
+        </div>
+
+  
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const delay = ms => new Promise(res => setTimeout(res, ms));
+
+  
+var i = 0;
+var j = 0;
+var k = -1;
+var wait = true;
+var txt = 'Hey,'; /* The text */
+var txt2 = 'I\'m Kitan. '
+var speed = 110; /* The speed/duration of the effect in milliseconds */
+document.getElementById("demo").innerHTML = ""
+document.getElementById("demo2").innerHTML = ""
+
+function blink(){
+    setInterval(function(){
+      if(k==-1)document.getElementById("demo2").innerHTML = txt2.slice(0,j)+'';
+      else document.getElementById("demo2").innerHTML = txt2.slice(0,j)+'';
+      k = k*-1;
+    }, 600);
+  }
+
+  function typeWriter() {
+  
+  if (i < txt.length) {
+
+    document.getElementById("demo").innerHTML = txt.slice(0,i)+ '';
+    i++;
+    if(i == txt.length){
+      setTimeout(
+        function(){
+          setTimeout(typeWriter, speed);
+        }
+      )
+    }else setTimeout(typeWriter, speed);
+    
+  }
+  else if (i >= txt.length && j < txt2.length+1) {
+
+    document.getElementById("demo").innerHTML = txt+" ";
+    document.getElementById("demo2").innerHTML = txt2.slice(0,j)+'';
+    j++;
+    setTimeout(typeWriter, speed);
+  }else{
+    //blink()
+  }
+
+}
+function typeWriter() {
+  
+
+  console.log(document.getElementById("demo").innerHTML )
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML = txt.slice(0,i)+ '';
+    i++;
+    if(i == txt.length){
+      setTimeout(
+        function(){
+          setTimeout(typeWriter, speed);
+        }
+      )
+    }else setTimeout(typeWriter, speed);
+    
+  }
+  else if (i >= txt.length && j < txt2.length+1) {
+
+    document.getElementById("demo").innerHTML = txt+" ";
+    document.getElementById("demo2").innerHTML = txt2.slice(0,j)+'';
+    j++;
+    setTimeout(typeWriter, speed);
+  }else{
+    //blink()
+  }
+
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+//document.getElementById("demo").innerHTML = "Hey, "
+//document.getElementById("demo2").innerHTML = "I'm Kitan."
+//document.getElementById("demo2").innerHTML += txt2.charAt(j);
+
+typeWriter()
+</script>
+
+
+
+
+
+</body>
+
+</html>

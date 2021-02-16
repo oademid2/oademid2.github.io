@@ -1,0 +1,136 @@
+
+.projects-section{
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.projects-section .title{
+    font-size: 20px;
+    font-weight:590;
+    padding:10px 0px;
+    padding-left: 20px;
+    margin: 0px;
+    margin-bottom: 20px;
+  
+}
+
+.projects-section-row{
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0px;
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    float: left;
+}
+
+.projects-section-panel{
+    background-color: rgb(244, 244, 244);
+    border-radius: 14px;
+    padding: 0px 20px;
+    width:280px;
+    height: 330px;
+  
+  }
+  
+  
+.projects-section-panel .caption p{
+    padding: 3px 0px;
+    margin:0px;
+    font-size: 12px;
+  }
+  
+  .projects-section-panel .prompts{
+    width: 100%;
+  
+  }
+  
+  .projects-section-panel button{
+    padding: 3px 6px;
+    margin:0 3px;
+    background-color: rgb(89, 82, 82);
+    color: white;
+    font-size: 11px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 540px;
+  }
+  
+  .projects-section-panel button:hover{
+    padding: 3px 6px;
+    margin:0 3px;
+    background-color: rgb(201, 201, 201);
+    color: black
+  }
+  
+  
+  .projects-section-panel a{
+    padding: 3px 6px;
+    margin:0 3px;
+    background-color: rgb(89, 82, 82);
+    color: white;
+    font-size: 11px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 540px;
+  }
+  .projects-section-panel a:hover{
+    padding: 3px 6px;
+    margin:0 3px;
+    background-color: rgb(201, 201, 201);
+    color: black
+  }
+  
+  .projects-section-panel .tools{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .tools .tool{
+    background-color: rgb(170, 211, 241);
+    border-radius: 16px;
+    padding:2px 4px;
+    margin: 2px 3px;
+    font-size: 8px;
+  }
+  
+.project-title{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+  
+  .project-title p{
+   padding: 5px 0px;
+   margin:0px;
+  
+  }
+  
+  .project-title p span{
+   padding: 5px 5px;
+   
+   }
+  
+  .project-img{
+    max-width:40%
+  }
+  
+  .section{
+    margin-bottom: 10px;
+  }
+  
+
+
+  
+  .website-title-main{
+    min-height:220px;
+  
+  }
+
+
+
