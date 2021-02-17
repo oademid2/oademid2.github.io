@@ -142,3 +142,50 @@
 
 
 
+  .tab p {
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+    
+.tab p:last-child {
+    margin-right: 0px;
+}
+    
+.tab p:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: rgb(150, 255, 58);
+    -webkit-transition: .5s;
+    transition: .5s
+}
+   
+.tab p.unactive-tab:before{
+  width: 0%;
+}
+
+.tab p:hover:before {
+    width: 100%
+}
+.tab p.unactive-tab:hover{
+  opacity: 1;
+}
+
+ .tab p.active-tab:before{
+  width: 100%
+
+}
+
+.tab p.unactive-tab{
+  opacity: 0.5;
+}
+
+.tab{
+  margin-bottom: 20px;
+}
