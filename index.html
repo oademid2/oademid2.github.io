@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="header.css">
 <link rel="stylesheet" href="projects.css">
 <style>
 body,h1 {
@@ -15,105 +16,11 @@ body,h1 {
   font-size: 12px
 }
 
-.website-header{
-  margin-top:60px;
-  margin-bottom:90px;
-}
-
-.socials-header{
-  margin-bottom: 7vw;
-  /*padding-left: 80px;*/
-  /*padding-left: 15vw;*/
-  font-size: 1.8vw;
-}
-
-.website-title-container{
-  /*padding-left: 100px;*/
-  /*padding-left: 15vw;*/
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.website-title{
-  font-size: 100px;
-  font-size: 8vw;
-  line-height: 98%;
-  font-weight: 800;
-}
-
-.website-title-subtitle{
-  display: block;
-  width: 100%;
-  font-size: 13px;
-  font-size:1.4vw;
-  padding-right: 0.5vw;
-}
-
-.website-title-img{
-  width:55%;
-  width:25vw;
-  margin-left:30px;
-  text-align: center;
-
-
-
-}
-.subline{
-  display: inline;
-  font-size: 30px;
-}
-
-
-.header-panel{
-  width: 100%;
-  display: inline-flex; 
-  justify-content: space-between;
-  margin: auto;
-  height: auto;
-}
-
-.left-header-panel{
-  width:60%;
-  /*background-color:powderblue;*/
-}
-
-.right-header-panel{
-  padding-left: 40px;
-  text-align: left;
-  width:40%;
-}
-
-
 .root{
   padding-right: 14vw;
   padding-left: 14vw;
 }
 
-#demo, #demo2{
-  /*background: rgb(255, 80, 238);*/
-  /*background-color: powderblue;
-  background: linear-gradient(90deg, powderblue 70%, #ffffff 30%);
-  background: linear-gradient(90deg, powderblue 30%, #ffffff 70%);
-  background: linear-gradient(180deg, white 50%, powderblue 50%);*/
-  /*background: linear-gradient(90deg, powderblue 30%, #ffffff 70%);*/
-  background-color: rgb(150, 255, 58);
-  padding-right: 12px;
-
-}
-
-#demo2{
-  /*background: linear-gradient(270deg, powderblue 80%, white 20%);*/
-}
-
-.demo-div p{
-  margin-bottom: 30px;
-}
-#demo{
-  padding-right: 14px;
-
-}
 
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -219,7 +126,8 @@ body,h1 {
        < <a href="https://github.com/oademid2" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
         
           <a href="https://www.linkedin.com/in/kitan-ademidun/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-        | kademidun@hotmail.com />
+        | kademidun@hotmail.com <span class="sm-icon-header">👩🏿‍💻</span>/> 
+        
       </span>
       <div class="icon-header">[this site is a work in progress 😁]</div>
 
@@ -231,11 +139,17 @@ body,h1 {
             <div class="demo-div">
               <p><span id="demo" class="website-title">Hey, </span></p>
             </div>
-            <div>
+            <div class="demo-div2">
               <p><span id="demo2" class="website-title">I'm Kitan.</span></p>
+            </div>
+            <div class="phone-div">
+              <p><span class="website-title">Hey, I'm Kitan.</span></p>
             </div>
             
 
+          </div>
+          <div class="mobile-img">
+            <img src="pic.png"></img>
           </div>
          
           
@@ -256,12 +170,14 @@ body,h1 {
   <div class="projects-section">
     <div class="col-md-12">
       <div class="tab">
-          <p class="active-tab"> WEB DEV</p>
+          <p class="active-tab tab-name"> WEB DEV</p>
+      
       
       </div>
   </div>
    <!-- <p class="title"><span>RECENT WEB DEVELOPMENT</span></p> -->
     <div class="projects-section-row">
+
       <div class="projects-section-panel">
         <div class="project-title section">
           <p><span>Friends On Spotify</span></p>
@@ -348,6 +264,9 @@ body,h1 {
 
   
       </div>
+    </div>
+
+  
     </div>
   </div>
 </div>

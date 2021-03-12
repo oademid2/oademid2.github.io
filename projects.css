@@ -12,6 +12,7 @@
     font-size: 20px;
     font-weight:590;
     padding:10px 0px;
+    padding:3vw 0px;
     padding-left: 20px;
     margin: 0px;
     margin-bottom: 20px;
@@ -21,7 +22,7 @@
 .projects-section-row{
     background-color: #ffffff;
     width: 100%;
-    padding: 0px;
+    padding: 0px 7px;
     display: flex; 
     justify-content: space-between;
     flex-wrap: wrap;
@@ -36,10 +37,12 @@
     justify-content: center;
     background-color: rgb(244, 244, 244);
     border-radius: 14px;
-    padding: 0px 20px;
-    width:280px;
-    height: 330px;
+    padding: 20px 20px;
+    width:31%;
+
     margin-bottom: 20px;
+    /*box-shadow: 
+    2px 5px 10px 1px rgba(0,0,0,0.41)*/
   
   }
   
@@ -52,9 +55,70 @@
   
   .projects-section-panel .prompts{
     width: 100%;
+    margin-bottom: 8px;
   
   }
   
+  .project-title{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+  
+  .project-title p{
+   padding: 5px 0px;
+   margin:0px;
+  
+  }
+  
+  .project-title p span{
+   padding: 5px 5px;
+   
+   }
+  
+  .project-img{
+    max-width:40%
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .projects-section-panel{
+      display: inline-flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      background-color: rgb(244, 244, 244);
+      border-radius: 14px;
+      padding: 0px 20px;
+      width:48%;
+  
+      margin-bottom: 20px;
+    
+    }
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+    .projects-section-panel{
+      display: inline-flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      background-color: rgb(244, 244, 244);
+      border-radius: 14px;
+      padding: 0px 20px;
+      margin:0 0%;
+      width:98%;
+  
+      margin-bottom: 20px;
+    
+    }
+
+    .tab{
+      text-align: center;
+    }
+    
+  }
   .projects-section-panel button{
     padding: 3px 6px;
     margin:0 3px;
@@ -106,28 +170,7 @@
     font-size: 8px;
   }
   
-.project-title{
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-    font-weight: 600;
-}
-  
-  .project-title p{
-   padding: 5px 0px;
-   margin:0px;
-  
-  }
-  
-  .project-title p span{
-   padding: 5px 5px;
-   
-   }
-  
-  .project-img{
-    max-width:40%
-  }
-  
+
   .section{
     margin-bottom: 10px;
   }
@@ -135,10 +178,6 @@
 
 
   
-  .website-title-main{
-    min-height:220px;
-  
-  }
 
 
 
@@ -186,6 +225,9 @@
   opacity: 0.5;
 }
 
+.tab-name{
+  margin-top:0px;
+}
 .tab{
   margin-bottom: 20px;
 }
