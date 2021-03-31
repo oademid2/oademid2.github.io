@@ -56,7 +56,7 @@ body,h1 {
   background-color: rgba(5,5,5, 0.95);
   overflow-x: hidden;
   transition: 0.3s;
-  padding-top: 60px;
+  padding-top: 10px;
   text-align:center;
 }
 
@@ -76,8 +76,8 @@ body,h1 {
 
 .sidenav .closebtn {
 
-
-  font-size: 200px;
+  margin-left: 80%;
+  font-size: 40px;
 }
 
 @media screen and (max-height: 450px) {
@@ -103,8 +103,32 @@ body,h1 {
   width:100%;
 }
 
+.preview-overlay-div{
+  width:100%;
+  padding: 0 10%;
+  position: relative;
+  display: flex;
+;
+}
 
-
+.overlay-info{
+  width:40%;
+  text-align: left;
+  color: white;
+}
+.overlay-img{
+  width: 60%;
+  position: relative;
+  display: flex;
+}
+.overlay-img img{
+  max-width: 90%;
+  height: auto;
+  justify-content: center;
+}
+.closebtn{
+  display: block;
+}
 
 
 </style>
@@ -113,11 +137,84 @@ body,h1 {
 
   <header>
   </header>
-  <div id="mySidenav" class="sidenav">
+  <div id="spotify-preview" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+    <div class="preview-overlay-div">
+      <div class="overlay-img">
+        <img id="spotify-gif" src="spotify.gif"></img>
+
+      </div>
+
     
-   <img id="spotify-gif" src="spotify.gif"></img>
-   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-info">
+        <h3>Libraries & Frameworks </h3>
+        <ul>
+         <li>Express + React + Node.js stack + MongoDB</li> 
+         <li>Spotify API</li> 
+        </ul>
+        <h3>Key Features </h3>
+        <ul>
+         <li>Pulling spotify tracks</li> 
+         <li>Comparing spotify library similarties across users</li> 
+        </ul>
+      <!--  <h3>Next Steps </h3>
+        <ul>
+          <li>Shift ftom props data storage to redux</li> 
+          <li>Use firebase for user managment</li> 
+          <li>Use firebase realtime database to save messages</li> 
+          <li>Optimize message broadcast and limit size of data sent</li> 
+
+        </ul>-->
+      </div>
+
+
+
   </div>
+
+  </div>
+
+  <div id="chat-room-preview" class="sidenav">
+    
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <div class="preview-overlay-div">
+      <div class="overlay-img">
+        <img id="spotify-gif" src="chat-app-demo.gif"></img>
+
+      </div>
+
+    
+      <div class="overlay-info">
+        <h3>Libraries & Frameworks </h3>
+        <ul>
+         <li>Express + React + Node.js stack</li> 
+         <li>Firebase chatroom & user storage</li> 
+         <li>Socket.io for front-end and server socket managment</li> 
+        </ul>
+        <h3>Key Features </h3>
+        <ul>
+         <li>Cretating a room & Joining a Room</li> 
+         <li>Blocking a user & Removing a message</li> 
+         <li>Emoji Reactions</li> 
+
+        </ul>
+        <h3>Next Steps </h3>
+        <ul>
+          <li>Shift ftom props data storage to redux</li> 
+          <li>Use firebase for user managment</li> 
+          <li>Use firebase realtime database to save messages</li> 
+          <li>Optimize message broadcast and limit size of data sent</li> 
+
+        </ul>
+      </div>
+
+
+
+  </div>
+   </div>
   
 <div class="root">
   <div class="website-header">
@@ -179,6 +276,46 @@ body,h1 {
     <div class="projects-section-row">
 
       <div class="projects-section-panel">
+       
+       
+       
+        <div class="project-title section">
+          <p><span>full-stack chat</span></p>
+        </div>
+  
+        <div class="section">
+          <img class="project-gif" src="chat-app-demo.gif"></img>
+        </div>
+        <div class="caption section">
+          <p>Dynamic chatrooms with message reactions and admin functionality.</p>
+        </div>
+        <div class="tools section">
+          <span class="tool">react</span>
+          <span class="tool">node.js</span>
+          <span class="tool">firestore database</span>
+          <span class="tool">socket.io</span>
+
+        </div>
+        <div class="prompts">
+    
+          <a onclick="openNav('chat-room-preview')">
+            preview
+          </a>
+          <a class="btn" target="_blank" href='https://github.com/oademid2/full-stack-chatroom'>
+            code
+          </a>
+         
+
+        </div>
+
+  
+      </div>
+
+
+      <div class="projects-section-panel">
+       
+       
+       
         <div class="project-title section">
           <p><span>Friends On Spotify</span></p>
         </div>
@@ -198,7 +335,7 @@ body,h1 {
         </div>
         <div class="prompts">
     
-          <a onclick="openNav()">
+          <a onclick="openNav('spotify-preview')">
             preview
           </a>
           <a class="btn" target="_blank" href='https://github.com/oademid2/friends-on-spotify'>
@@ -260,10 +397,61 @@ body,h1 {
             code
           </a>
 
+      </div>
+  
+      </div>
+
+      <div class="projects-section-panel">
+        <div class="project-title section">
+          <p>iPayroll</p>
+        </div>
+       
+  
+        <div class="section">
+          <img class="project-img" src="payroll.png"></img>
+        </div>
+        <div class="caption section">
+          <p>Java app for managing employee payroll. </p>
+        </div>
+        <div class="tools section">
+          <span class="tool">Java</span>
+          <span class="tool">SQL</span>
+        </div>
+        <div class="prompts">
+          <a class="btn" target="_blank" href='https://github.com/oademid2/ipayroll-management'>
+            code
+          </a>
+
         </div>
 
   
       </div>
+
+      <div class="projects-section-panel">
+        <div class="project-title section">
+          <p>SketchPad</p>
+        </div>
+       
+  
+        <div class="section">
+          <img class="project-gif" src="sketchpad.gif"></img>
+        </div>
+        <div class="caption section">
+          <p>Java sketchpad app for drawing -- simple version of paint. </p>
+        </div>
+        <div class="tools section">
+          <span class="tool">Java</span>
+        </div>
+        <div class="prompts">
+          <a class="btn" target="_blank" href='https://github.com/oademid2/SketchPad/tree/master/src/sketch'>
+            code
+          </a>
+
+        </div>
+
+  
+      </div>
+
     </div>
 
   
@@ -348,13 +536,16 @@ function typeWriter() {
 
 }
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
+document.getElementById('spotify-preview').style.width = "0%";
+function openNav(prev) {
+  document.getElementById(prev).style.width = "100%";
 
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("spotify-preview").style.width = "0";
+  document.getElementById("chat-room-preview").style.width = "0";
+
 }
 
 //document.getElementById("demo").innerHTML = "Hey, "
