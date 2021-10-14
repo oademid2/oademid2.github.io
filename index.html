@@ -130,6 +130,28 @@ body,h1 {
   display: block;
 }
 
+.resume-btn{
+    margin-top: 8px;
+    color: black;
+    background-color: none;
+    border-radius: 8px;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 3px 5px;
+    margin-right: 8px;
+}
+
+.resume-btn:hover{
+
+transition: width 0.3s;
+font-weight: bold;
+border: 3px solid black;
+}
+.website-title-subtitle{
+  padding: 20px 5px;
+  
+}
+
 
 </style>
 
@@ -220,10 +242,12 @@ body,h1 {
   <div class="website-header">
     <div class="socials-header">
       <span> 
-       < <a href="https://github.com/oademid2" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+        <a href="https://github.com/oademid2" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
         
           <a href="https://www.linkedin.com/in/kitan-ademidun/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
         | kademidun@hotmail.com <span class="sm-icon-header">👩🏿‍💻</span>/> 
+
+
         
       </span>
       <div class="icon-header">[this site is a work in progress 😁 ]</div>
@@ -251,8 +275,10 @@ body,h1 {
          
           
           <div class="website-title-subtitle">
-            Computer engineering & Business student.  Programmer. Documentary & dystopic tv fanatic. Learning about fintech and agriculture. Social economics enthusiast. 
-            This is me trying stuff out.
+            
+            <button class="resume-btn" type="submit" onclick="window.open('Kitan_Ademidun_Product_Manager_Resume.pdf')">Download!</button>
+            
+            <a class="resume-btn"onclick="window.open('Kitan_Ademidun_Product_Manager_Resume.pdf')">view resume</a>
           </div>
   
         </div>
