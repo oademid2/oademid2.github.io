@@ -1,0 +1,297 @@
+---
+layout: default
+---
+<style>
+
+ 
+    .panel{
+        margin: 0;
+        height: 550px;
+        max-height: 95%;
+        width: 37%;
+        padding:5px 10px;
+  
+        border-radius: 8px;
+        overflow-y: scroll;
+    }
+
+
+    .panel-a{
+        max-width: 40%;
+        background-color:rgb(255, 255, 255);
+        border: 1px solid #c7c7c7;
+        padding: 5px 10px;
+        color: #454545;
+        font-size: 12px;
+        
+    }
+
+    .about-me-blurb{
+        font-size: 12px;
+        
+    }
+
+    .about-highlights{
+        font-size: 12px;
+
+        padding: 0 4%;
+    }
+
+    .about-skills p{
+        padding: 0;
+        margin: 0;
+    }
+
+    .panel-b{
+        background-color: #ffffff;
+        width: 58%;
+    }
+
+
+
+    .panel-c{
+        width: 0%;
+        display: none;
+    }
+
+
+
+
+    .panel-block-body{
+
+        /* background-color: aquamarine; */
+        max-height: 450px;
+        overflow-y: scroll;
+    }
+
+
+
+
+
+
+
+    .panel-section{
+        border-radius: 0px;
+      
+  
+       
+        color: rgb(26, 84, 164);
+        color: black;
+        text-decoration: none;
+        color: #454545;
+
+        
+    }
+
+    .panel-block{
+        /* margin: 5px 0px; */
+        padding: 8px 5px;
+        min-height: 70px;
+
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .panel-section:hover{
+        color: rgb(62, 119, 198);
+        text-decoration: underline;
+
+    }
+
+    .panel-section-image{
+        background-color: yellow;
+        max-width: 5%;
+    }
+
+    .panel-section img{
+       max-width: 100%;
+       padding: 3px 5px;
+       display: none;
+
+   }
+
+
+    .panel-section-content{
+       padding-left: 4px;
+       min-width: 90%;
+       /* background-color: bisque; */
+   }
+
+   .panel-title{
+        font-weight: 500;
+        margin: 0 0 0 0;
+        padding: 0;
+        font-size: 24px;
+        color: #454545;
+        /* background-color: rgb(107, 107, 255); */
+        /*color: rgb(88, 84, 84);*/
+    }
+
+    .work-title{
+        font-size: 12px;
+        padding: 0px;
+        margin: 3px 0;
+        font-weight: 600;
+    }
+
+    .work-description{
+        font-size: 10px;
+        padding: 0px;
+        margin: 3px 0;
+        /* color: rgb(132, 129, 129); */
+    }
+
+    .highlight{
+
+        font-weight: 550;
+    }
+
+    @media only screen and (max-width: 420px) {
+        /* For mobile phones: */
+        .header-name{
+            margin-top:20px;
+            min-width:100%;
+            text-align: center;
+        }
+
+        .header-about{
+            min-width:100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .header-nav{
+            padding: 0;
+            margin: 0;
+
+            padding-right: 10px;
+        }
+
+        .panel{
+            padding: 5px 10px;
+            margin: 10px 0;
+            color: #454545;
+        }
+        .panel-a{
+            min-width: 100%;
+        }
+
+        .panel-b{
+            min-width: 100%;
+            border: 1px solid #c7c7c7;
+        }
+
+    }
+
+
+
+</style>
+
+<body>
+
+
+
+        <div class="panel panel-a">
+            <h3 class="panel-title">About me</h3>
+
+            <p class="about-me-blurb">
+
+            I work in consulting and studied computer engineering & business. I'm most excited by problems that are of society or economic design. Currently learning a lot about crypto, payments and agriculture.
+            Trying to figure out what my role is in making the world a better place. 
+
+            </p>
+            <h5>Highlights</h5>
+            <ul class="about-highlights">
+                <li>Developed a data ecosystem design for leading market infrastructure company</li>
+                <li>Conducted due dilligence on 5 targets including 3 fintech  companies</li>
+                <li>Co-produced a crypto market report for distriubtion to top international banking clients</li>
+                <li>Create a SQL data mapping for entire consumer banking analytics team at large canadian bank</li>
+                <li>Conducted entity resolution in Python to cross reference internal client data with vendor data and identify clients in which we could expand our payment products</li>
+                <li>Managed data flow, design, and implementation of senitment analysis of dashboard in PowerBI for senior leadership to track sales progress in payments sales team</li>
+
+            </ul>
+
+            <h5>Skills</h5>
+            <div class="about-skills">
+                <p class=>🟩🟩🟩 SQL, Python, Excel, data analysis, model building</p>
+                <p>🟩🟩⬜ React, Web Development, NLP</p>
+            </div>
+
+ 
+        </div>
+    
+    
+        <div class="panel panel-b">
+            <h3 class="panel-title">Things I've written</h3>
+
+
+            <div class="panel-block-body">
+
+                {% for post in site.posts %}
+
+                <div class="panel-block">
+                    <a href="{{ post.ref_link }}" target="_blank" class="panel-section" >
+    
+                            <div class="panel-section-img">
+                                <img src="images/polygon.png">
+    
+                            </div>
+                            <div class="panel-section-content">
+                                <h3 class="work-title">{{ post.headline }}</h3>
+                                <p class="work-description">{{ post.subline}}</p>
+                            </div>
+                        
+                    </a>
+            </div>
+            
+         
+              {% endfor %}
+                
+
+
+            
+            </div>
+        </div>
+    
+        <div class="panel panel-c">
+            <h3 class="panel-title">Things I've built</h3>
+
+
+            <a href="https://medium.com/@kitanademidun/polygon-is-the-scaling-solution-ethereum-needs-e5bd1ec2d273" target="_blank" class="panel-section" >
+
+                    <div class="panel-section-img">
+                        <img src="images/polygon.png">
+
+                    </div>
+                    <div class="panel-section-content">
+                        <h3 class="work-title">Polygon is the scaling solution Ethereum needs</h3>
+                        <p class="work-description">What it is and why I'm bullish</p>
+                    </div>
+                
+            </a>
+
+          
+            
+           
+ 
+        </div>
+
+
+    
+
+            
+ 
+    
+    
+
+
+
+
+
+
+
+</body>
+</html>

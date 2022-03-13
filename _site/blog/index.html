@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+<style>
+
+    body{ 
+
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+
+    }
+
+    .website{
+
+        width:85%;
+        max-width: 85vw;
+        margin: auto;
+        overflow: scroll;
+        /* background-color: rgb(160, 255, 225); */
+
+    }
+
+    .main-content{
+
+        height: 80vh;
+        margin: 0;
+        max-width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        /* background-color: rgb(221, 186, 255); */
+  
+    }
+
+    .header-content{
+       
+        height: 20vh;
+        width: 100%;
+        
+        margin: 0;
+        padding: 0px 0;
+
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        
+
+        color: #454545;
+        height:20vh;
+
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+
+        /* background-color: rgb(151, 151, 188); */
+
+
+
+    }
+
+    .header-socials{
+        margin: 0;
+    }
+
+
+    .header-title{
+        margin: 0;
+        
+    }
+
+    .header-name{
+  
+      /* background-color: antiquewhite; */
+      max-width: 30%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+    }
+   
+
+    .header-about{
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: none;
+      width: 65%;
+      margin: 10px 0;
+      border-radius: 8px;
+    
+      padding-left: 70px;
+      margin-left: 15px;
+
+
+    } 
+
+    .header-nav{
+      padding: 0 20px;
+
+      text-decoration: none;
+      font-size: 24px;
+
+    }
+
+    .active-nav{
+      color: rgb(213, 21, 21);
+      text-decoration: underline;
+    }
+
+    .header-nav:hover{
+      color: grey;
+      text-decoration: underline;
+    }
+
+    .bold {
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  font-weight: 300;
+}
+
+
+.boldish {
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  font-weight: 500;
+}
+
+
+@media only screen and (max-width: 420px) {
+  /* For mobile phones: */
+  .header-name, .header-about{
+    min-width:100%;
+  }
+
+  .header-about{
+    min-width:100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-nav{
+    padding: 0;
+    margin: 0;
+
+    padding-right: 10px;
+  }
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="website">
+    <div class="header-content">
+        <div class="header-name">
+        <h1 class="bold header-title">Kitan Ademidun</h1>
+        <p class="header-socials"> 
+           < <a href="https://github.com/oademid2" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kitan-ademidun/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            | kademidun@hotmail.com <span class="sm-icon-header">👩🏿‍💻</span>/> 
+        </p>
+        </div>
+
+        <div class="header-about">
+          <nav>
+            
+     
+    
+            <a href="/" class="header-nav">
+              Home</a>
+            <a href="/blog/"  class="header-nav" >
+              Blog
+            </a>
+          </nav>
+        </div>
+    </div>
+
+    <div class="main-content">    
+      
+      <style>
+
+    .panel{
+        margin: 0;
+
+        font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+        font-size: 1em;
+        line-height: 1.5;
+        color: rgb(82, 80, 80);
+        width: 100%;
+    }
+
+    .panel-1{
+        width: 100%;
+        min-width: 100%;
+        border-radius: 8px;
+        font-size: 12px;
+       
+    }
+
+    .item{
+        border-radius: 0px;
+        margin: 5px 0px;
+        padding: 8px 5px;
+        border-bottom: 1px solid black;
+       
+        text-decoration: none;
+
+        display: flex;
+        justify-content: flex-start;
+    }
+
+  
+
+
+    .item-content{
+        padding-left: 0px;
+        min-width: 90%;
+    }
+
+
+
+    .title{
+        font-size: 14px;
+        padding: 0px;
+        margin: 3px 0;
+        font-weight: 400;
+    }
+
+    .description{
+        font-size: 10px;
+        padding: 0px;
+        margin: 3px 0;
+        color: rgb(132, 129, 129);
+    }
+
+
+
+    .item:hover{
+        color: rgb(62, 119, 198);
+        text-decoration: underline;
+    }
+
+
+</style>
+
+
+<div>
+
+<h3 class="panel-title " >What I'm writing</h3>
+
+<div id="list" class="panel panel-1">
+
+   
+
+            
+            <a href="/blog/polygon/" target="_blank" class="item" >
+        
+                    
+                    <div class="item-content">
+                        <h3 class="title">Polygon is the scaling solution Ethereum needs?</h3>
+                        <p class="description">What it is and why I'm bullish</p>
+                    </div>
+                
+            </a>
+            
+            <a href="/blog/IPFS" target="_blank" class="item" >
+        
+                    
+                    <div class="item-content">
+                        <h3 class="title">IPFS can give more credibility to NFTs as proof of ownership</h3>
+                        <p class="description">NFTs verify the ownership of something. IPFS tells you what that something is.</p>
+                    </div>
+                
+            </a>
+            
+            <a href="/blog/green-revolution" target="_blank" class="item" >
+        
+                    
+                    <div class="item-content">
+                        <h3 class="title">The threat of the Green Revolution on traditional farming practices, and agriculture in Sub-Saharan Africa*</h3>
+                        <p class="description">Based on the arguments of Kofi Annan</p>
+                    </div>
+                
+            </a>
+            
+            <a href="/blog/fintech" target="_blank" class="item" >
+        
+                    
+                    <div class="item-content">
+                        <h3 class="title">The landscape is set for Fintech in Nigeria (2018)</h3>
+                        <p class="description">Looking at two metrics</p>
+                    </div>
+                
+            </a>
+            
+
+
+
+
+
+</div>
+
+<div class="panel panel-2" >
+
+    
+
+</div>
+
+
+</div>
+
+    </div>
+
+</div>
+
+
+
+
+</body>
+</html>

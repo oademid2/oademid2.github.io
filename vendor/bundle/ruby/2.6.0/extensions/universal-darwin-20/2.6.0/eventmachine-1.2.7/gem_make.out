@@ -1,12 +1,12 @@
-current directory: /Users/kitan/Documents/CODING/meetkitan/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20220308-96691-1kpnptg.rb extconf.rb
+current directory: /Users/kitan/Documents/CODING/ed-practice/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20220305-81620-kcvihx.rb extconf.rb
 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin20/rbconfig.rb:229: warning: Insecure world writable dir /Users/kitan in PATH, mode 040777
 creating Makefile
 
-current directory: /Users/kitan/Documents/CODING/meetkitan/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+current directory: /Users/kitan/Documents/CODING/ed-practice/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR=" clean
 
-current directory: /Users/kitan/Documents/CODING/meetkitan/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+current directory: /Users/kitan/Documents/CODING/ed-practice/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR="
 compiling mapper.cpp
 compiling rubymain.cpp
@@ -16,6 +16,6 @@ ld: warning: ignoring file mapper.o, building for macOS-arm64e but attempting to
 ld: warning: ignoring file rubymain.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.2.Internal.sdk/usr/local/lib'
 
-current directory: /Users/kitan/Documents/CODING/meetkitan/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+current directory: /Users/kitan/Documents/CODING/ed-practice/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20220308-96691-166ym1x
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20220305-81620-17sqf3r

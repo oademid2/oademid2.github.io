@@ -1,0 +1,13 @@
+---
+layout: post
+headline:  "The landscape is set for Fintech in Nigeria (2018)"
+subline: "Looking at two metrics"
+show_date: "12/01/2018"
+permalink: "/blog/fintech"
+section: "blog"
+ref_link: "/blog/fintech"
+
+
+---
+
+

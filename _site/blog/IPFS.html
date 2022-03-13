@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+<style>
+
+    body{ 
+
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+
+    }
+
+    .website{
+
+        width:85%;
+        max-width: 85vw;
+        margin: auto;
+        overflow: scroll;
+        /* background-color: rgb(160, 255, 225); */
+
+    }
+
+    .main-content{
+
+        height: 80vh;
+        margin: 0;
+        max-width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        /* background-color: rgb(221, 186, 255); */
+  
+    }
+
+    .header-content{
+       
+        height: 20vh;
+        width: 100%;
+        
+        margin: 0;
+        padding: 0px 0;
+
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        
+
+        color: #454545;
+        height:20vh;
+
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+
+        /* background-color: rgb(151, 151, 188); */
+
+
+
+    }
+
+    .header-socials{
+        margin: 0;
+    }
+
+
+    .header-title{
+        margin: 0;
+        
+    }
+
+    .header-name{
+  
+      /* background-color: antiquewhite; */
+      max-width: 30%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+    }
+   
+
+    .header-about{
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: none;
+      width: 65%;
+      margin: 10px 0;
+      border-radius: 8px;
+    
+      padding-left: 70px;
+      margin-left: 15px;
+
+
+    } 
+
+    .header-nav{
+      padding: 0 20px;
+
+      text-decoration: none;
+      font-size: 24px;
+
+    }
+
+    .active-nav{
+      color: rgb(213, 21, 21);
+      text-decoration: underline;
+    }
+
+    .header-nav:hover{
+      color: grey;
+      text-decoration: underline;
+    }
+
+    .bold {
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  font-weight: 300;
+}
+
+
+.boldish {
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  font-weight: 500;
+}
+
+
+@media only screen and (max-width: 420px) {
+  /* For mobile phones: */
+  .header-name, .header-about{
+    min-width:100%;
+  }
+
+  .header-about{
+    min-width:100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-nav{
+    padding: 0;
+    margin: 0;
+
+    padding-right: 10px;
+  }
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="website">
+    <div class="header-content">
+        <div class="header-name">
+        <h1 class="bold header-title">Kitan Ademidun</h1>
+        <p class="header-socials"> 
+           < <a href="https://github.com/oademid2" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kitan-ademidun/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            | kademidun@hotmail.com <span class="sm-icon-header">👩🏿‍💻</span>/> 
+        </p>
+        </div>
+
+        <div class="header-about">
+          <nav>
+            
+     
+    
+            <a href="/" class="header-nav">
+              Home</a>
+            <a href="/blog/"  class="header-nav"  style="color:gray; text-decoration: underline;" >
+              Blog
+            </a>
+          </nav>
+        </div>
+    </div>
+
+    <div class="main-content">    
+      
+      <style>
+
+    .article{
+        font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+        font-size: 1em;
+        line-height: 1.5;
+        color: rgb(82, 80, 80);
+        width: 100%;
+        max-width: 800px;
+        max-height: 70vh;
+        overflow: scroll;
+    
+
+    }
+    .headline{
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+        color: black;
+
+    }
+    .subline{
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+        color:grey;
+        margin-bottom: 50px;
+
+    }
+    .content{
+        font-weight: 200;
+    }
+
+</style>
+
+
+
+<div class="article">
+
+    <h1 class="headline">IPFS can give more credibility to NFTs as proof of ownership</h1>
+    <p class="subline" >NFTs verify the ownership of something. IPFS tells you what that something is.</p>
+
+    <div class="content">
+        <h3 id="the-pain-points-of-nfts">The pain points of NFTs</h3>
+
+<p>The initial craze of NFTs was that they are unique and cannot be copied. While this is true for the fundamental definition of what an NFT is,  <a href="https://ethereum.org/en/nft/">a unique unalterable token that is created and stored on the blockchain,</a>  it doesn’t necessarily hold true when applied to the most common use case of NFTs, art.</p>
+
+<p>A recurring pain point with NFT Art is that the ownership is decoupled from the art. Art is created off-chain (in photoshop, digital sketch, scanned drawing etc.) but being owned on the chain. You basically have to create the art and then let people know what token the art is tied to.</p>
+
+<p>In context of widespread art distribution, NFTs don’t track the original art file itself as you don’t actually distribute files on most blockchains (which is where ipfs comes in 👀). At some point it’s hard to keep track of who  <em>has</em>  the art and who  <em>owns</em>  the token. Really the NFT and the ART or only related arbitrarily, just because someone says it is.</p>
+
+<p>My main argument is that although NFTs provide a more visible way to track ownership of digital art, because art and ownership are decoupled, it is difficult to directly attribute ownership<strong>.</strong></p>
+
+<h3 id="could-ipfs-solve-the-issues-of-nfts">Could IPFS solve the issues of NFTs?</h3>
+
+<p>Right now IPFS, a blockchain solution to file distribution, seems like a starting resolution to the issue of coupling Art to NFTs.  <a href="https://www.youtube.com/watch?v=5Uj6uR3fp-U&amp;ab_channel=SimplyExplained">There’s a great youtube video on how IPFS works</a>, but in short — in IPFS you add a file to the IPFS network, it gets a unique hash address/token and multiple people save a copy of that file or parts of that file. So the file and origin of that file is visible to anyone (unlike if it was stored on your laptop or a server where only the owner could access it). In theory, the file is immutable, so if changes are made to that file and it’s re-uploaded, the network keeps track of that — so there is always a true original. Whenever someone wants to get the file they can refer to the unique hash/token and the unique file associated with that hash will be accessible.</p>
+
+<p>To directly compare, when using NFTs alone, you distribute the token and art separately and you have to tell people which token belongs to which art. IPFS automatically ties the token to the art.</p>
+
+<h3 id="ipfs-makes-ownership-more-than-just-a-construct">IPFS makes ownership more than just a construct</h3>
+
+<p>One important thing to understand about IPFS is that it uses content based addressing instead of location based addressing.</p>
+
+<p>With location based addressing, which is used by traditional storage servers, you access the file based on location. You have to know where the file is located, typically the domain name/IP address of the server, to get access to it. With content based addressing however, you access the file based on what the content is, via the unique hash name, to get access. Essentially. instead of figuring out where the content you want is, all you need to know is what that content is. Though the idea of accessing information based on a long unique sequence of characters seems convoluted, other technologies in crypto infrastructure allow you to resolve the hash key as a domain name (so you people ca just the domain not the hash key) like is currently done with IP addresses for HTTP requests. So file access with IPFS can be considered comparatively simple to Web2 file access.</p>
+
+<p>Since access to the file is not defined on location, that means it can be located anywhere which allows IPFS to operate via distributed nodes (individuals running “microservers”) that consequently decentralizes authority of the file. This means no singular person has authority over its deletion, modifications and access.</p>
+
+<p>Decentralized authority almost seems contradictory to the idea of ownership, after all if a creator uploads an IPFS file to the network and doesn’t have authority over it, how can they be considered the owner? Well ownership isn’t an act, it’s a construct. Ownership means nothing if you can’t prove you created it and can’t prove authenticity. In today’s world people really don’t have authority over the digital art they release anyway. Once they share the image online any one can right-click + save as. At least now there is a way to attribute ownership</p>
+
+<p>I could see something like IPFS becoming a standard protocol like HTTPS. If this occurred as a standard, it would make it easy for people to integrate IPFS content to their websites, articles etc. and create an infrastructure for giving fair and appropriate attribution to content use.</p>
+
+<h3 id="ipfs-still-has-gaps-but-it-will-provide-more-than-the-bare-minimum">IPFS still has gaps but it will provide more than the bare minimum</h3>
+
+<p>IPFS overall helps with coupling the art to the token/hash address, it doesn’t avoid the problem of duplication. Just like with a standard NFT art you can copy an image and reupload it to the network under a new content hash and claim the unique ownership associated with that token.</p>
+
+<p>I’ve sort of accepted that NFTs aren’t yet a perfect solution to ownership, but being at least  <em>some</em>  sort of solution compared to the void of ownership traceability that existed in digital art. In a similar vein, I don’t see IPFS being an immediate perfect solution, but I think IPFS is going to do a lot in shifting NFTs from  <em>some</em>  sort of solution for digital art ownership, to a strong solution.</p>
+
+    </div>
+
+</div>
+
+    </div>
+
+</div>
+
+
+
+
+</body>
+</html>

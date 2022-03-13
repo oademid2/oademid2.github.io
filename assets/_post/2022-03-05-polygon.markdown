@@ -1,0 +1,70 @@
+---
+layout: post
+headline:  "Polygon is the scaling solution Ethereum needs?"
+subline: "What it is and why I'm bullish"
+show_date: "03/05/2022"
+permalink: "/post/polygon/"
+section: "post"
+ref_link: "/post/polygon"
+
+
+---
+
+
+### What is Polygon?
+
+[Polygon](https://polygon.technology/) is a Layer 2 chain for creating Ethereum compatible networks. In simple terms, it allows you to execute smart contracts on its chain that can be transferred with Ethereum, and supports the same for independent chains. 
+
+![](Aspose.Words.80ac7984-f941-42df-b52f-edcf335bcbde.001.png)
+
+
+### Why I’m bullish?
+
+###### Polygon is Scalable.
+
+Being a layer 2 network, Polygon solves Ethereum’s biggest issue of [scalability](https://blog.coinbase.com/scaling-ethereum-crypto-for-a-billion-users-715ce15afc0b). As activity on Ethereum increases, it faces high congestion. This has resulted in slower transactions and higher gas fees. As a layer 2 solution, Polygon is able to process transactions of Ethereum’s mainnet while still [holding](https://www.one37pm.com/nft/tech/what-are-layer-2-solutions-and-why-are-they-important)[ ](https://www.one37pm.com/nft/tech/what-are-layer-2-solutions-and-why-are-they-important)[the](https://www.one37pm.com/nft/tech/what-are-layer-2-solutions-and-why-are-they-important)[ ](https://www.one37pm.com/nft/tech/what-are-layer-2-solutions-and-why-are-they-important)[integrity](https://www.one37pm.com/nft/tech/what-are-layer-2-solutions-and-why-are-they-important)[ ](https://www.one37pm.com/nft/tech/what-are-layer-2-solutions-and-why-are-they-important)[of](https://www.one37pm.com/nft/tech/what-are-layer-2-solutions-and-why-are-they-important)[ ](https://www.one37pm.com/nft/tech/what-are-layer-2-solutions-and-why-are-they-important)[Ethereum](https://www.one37pm.com/nft/tech/what-are-layer-2-solutions-and-why-are-they-important)[’](https://www.one37pm.com/nft/tech/what-are-layer-2-solutions-and-why-are-they-important)s block chain.
+
+**Polygon supports a multichain future.**
+
+Polygon’s vision is to provide connectivity between different blockchains and be Ethereum’s internet of blockchains. In essence, it enables blockchains to easily bridge with Ethereum. This is promising because the future of blockchain will likely be multichain and connectivity between different blockchains will improve the user experience. What’s more, Ethereum is one of the most utilized blockchains by developers so strategically there’s a lot of opportunity in being the gateway for other blockchains to integrate with it.
+
+[Vitalik](https://twitter.com/VitalikButerin/status/1479501366192132099)[ ](https://twitter.com/VitalikButerin/status/1479501366192132099)[says](https://twitter.com/VitalikButerin/status/1479501366192132099)[ ](https://twitter.com/VitalikButerin/status/1479501366192132099)[the](https://twitter.com/VitalikButerin/status/1479501366192132099)[ ](https://twitter.com/VitalikButerin/status/1479501366192132099)[future](https://twitter.com/VitalikButerin/status/1479501366192132099)[ ](https://twitter.com/VitalikButerin/status/1479501366192132099)[is](https://twitter.com/VitalikButerin/status/1479501366192132099)[ ](https://twitter.com/VitalikButerin/status/1479501366192132099)[multichain](https://twitter.com/VitalikButerin/status/1479501366192132099)[:](https://twitter.com/VitalikButerin/status/1479501366192132099)
+
+![](Aspose.Words.80ac7984-f941-42df-b52f-edcf335bcbde.002.png)
+
+![](Aspose.Words.80ac7984-f941-42df-b52f-edcf335bcbde.003.png)
+
+**Polygon emphasizes value of Ethereum.**
+
+outside of its scalability issues, Ethereum already provides significant functionality.  Unlike some layer 1 solutions to Ethereum’s problems (i.e. [Solana](https://www.coinbase.com/learn/crypto-basics/what-is-solana), [Cardano](https://www.coinbase.com/learn/crypto-basics/what-is-cardano)), Polygon builds on Ethereum instead of in place of Ethereum. It’s [EVM](https://ethereum.org/en/developers/docs/evm/)[ ](https://ethereum.org/en/developers/docs/evm/)[compatible](https://ethereum.org/en/developers/docs/evm/) which means that smart contracts deployed on the Ethereum network can be easily deployed on Polygon’s blockchain thus low switching costs. Ethereum is a largely used and trusted network with lots of strong functionalities, it makes sense to leverage this. Betting on Polygon is also betting on Ethereum.
+
+To summarize -- not only does polygon have improved scalability, its low switching costs and EVM compatibility reduces barriers for adoption.
+
+Below is a bit more detail on Polygon’s functionality:
+
+## How does Polygon work?
+Polygon uses an adaptation of [Ethereum](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/plasma/)[’](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/plasma/)[s](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/plasma/)[ ](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/plasma/)[Plasma](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/plasma/)[’](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/plasma/)[s](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/plasma/)[ ](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/plasma/)[framework](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/plasma/) which allows transactions to occur off the main Ethereum network and later transferred later to the mainnet. Very simply, transactions will occur on Polygon and be bundled together as one transaction when ready to be carried over to the main Ethereum network. These individual transactions are verified on Polygon as they occur and when returned to Ethereum as a batch, are then verified by Ethereum.
+
+Polygon aims to provide several options for scaling solutions. It’s primary solution is the [PoS](https://finematics.com/polygon-matic-explained/#:~:text=Matic%20PoS%20Chain%20And%20Matic%20Plasma%20Chains&text=Plasma%2C%20in%20essence%2C%20is%20a,for%20building%20scalable%20decentralized%20applications.&text=Matic%20PoS%20Chain%20is%20a,mechanism%20with%20its%20own%20validators)[ ](https://finematics.com/polygon-matic-explained/#:~:text=Matic%20PoS%20Chain%20And%20Matic%20Plasma%20Chains&text=Plasma%2C%20in%20essence%2C%20is%20a,for%20building%20scalable%20decentralized%20applications.&text=Matic%20PoS%20Chain%20is%20a,mechanism%20with%20its%20own%20validators)[chain](https://finematics.com/polygon-matic-explained/#:~:text=Matic%20PoS%20Chain%20And%20Matic%20Plasma%20Chains&text=Plasma%2C%20in%20essence%2C%20is%20a,for%20building%20scalable%20decentralized%20applications.&text=Matic%20PoS%20Chain%20is%20a,mechanism%20with%20its%20own%20validators) which is a permissionless side chain that uses a proof-of-stake consensus mechanism with it’s own validators, but also relies on Ethereum’s security for validator staking and check points. 
+
+
+## The 4 layers of Polygon
+
+Overall, [polygon](https://polygon.technology/lightpaper-polygon.pdf#page=9)[ ](https://polygon.technology/lightpaper-polygon.pdf#page=9)[can](https://polygon.technology/lightpaper-polygon.pdf#page=9)[ ](https://polygon.technology/lightpaper-polygon.pdf#page=9)[be](https://polygon.technology/lightpaper-polygon.pdf#page=9)[ ](https://polygon.technology/lightpaper-polygon.pdf#page=9)[broken](https://polygon.technology/lightpaper-polygon.pdf#page=9)[ ](https://polygon.technology/lightpaper-polygon.pdf#page=9)[into](https://polygon.technology/lightpaper-polygon.pdf#page=9)[ 4 ](https://polygon.technology/lightpaper-polygon.pdf#page=9)[layers](https://polygon.technology/lightpaper-polygon.pdf#page=9) -- two mandatory and two optional layers.
+
+![Pic](/assets/pic.png)
+
+The Ethereum layer, the first optional layer, allows Polygon chains to use Ethereum as it’s base layer for things like staking, dispute resolution , messaging and a few other functionalities. The security layer, the second layer, is also optional. It allows chains to add a validation as a service or use Ethereum as a security layer. The third layer is the polygon networks layer where core functions such as transaction collation, local consensus and block production occur. The last layer is the ethereum layer, which is mandatory, and interprets and executes transactions that are included in Polygon’s chains
+
+## The Polygon bridge
+
+The bridge is a key part of Polygon. It is how assets are migrated between layer 2 and Ethereum. There are two implementations offered -- [Plasma](https://docs.polygon.technology/docs/develop/ethereum-polygon/plasma/getting-started/#:~:text=A%20bridge%20is%20basically%20a,or%20Proof%20of%20Stake%20bridge.)[ ](https://docs.polygon.technology/docs/develop/ethereum-polygon/plasma/getting-started/#:~:text=A%20bridge%20is%20basically%20a,or%20Proof%20of%20Stake%20bridge.)[bridge](https://docs.polygon.technology/docs/develop/ethereum-polygon/plasma/getting-started/#:~:text=A%20bridge%20is%20basically%20a,or%20Proof%20of%20Stake%20bridge.) and [PoS](https://docs.polygon.technology/docs/develop/ethereum-polygon/pos/getting-started/)[ ](https://docs.polygon.technology/docs/develop/ethereum-polygon/pos/getting-started/)[bridge](https://docs.polygon.technology/docs/develop/ethereum-polygon/pos/getting-started/).
+
+The Plasma bridge uses a mechanism called [Fraud](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/plasma/#fraud-proofs)[ ](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/plasma/#fraud-proofs)[proofs](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/plasma/#fraud-proofs) for the main chain, Ethereum, to validate the assets being transferred from Polygon. A challenge period of 7 days is required when withdrawing funds which means it will take up to 7 days for funds to be withdrawn unto Ethereum.
+
+With the PoS bridge Proof of stake based assets provides PoS security. Since this security is accepted by users and developers it does not use fraudproffs and allows for a faster exit, up to 30 minutes, with one checkpoint interval.
+
+## In conclusion
+
+Polygon solves Ethereum’s most pressing problem of scalability without directly competing against Ethereum.
+
