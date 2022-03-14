@@ -175,11 +175,12 @@
         <div class="header-about">
           <nav>
             {% assign page_section = page.url | split: "/" %}
+      
      
     
             <a href="/" class="header-nav"{% if page.url == "/" %} style="color:gray; text-decoration: underline;" {% endif %}>
               Home</a>
-            <a href="/blog/"  class="header-nav" {% if page_section[-2] == "blog" or page_section == "blog" %} style="color:gray; text-decoration: underline;" {% endif %}>
+            <a href="/blog/"  class="header-nav" {% if page.section == "blog"  %} style="color:gray; text-decoration: underline;" {% endif %}>
               Blog
             </a>
           </nav>
