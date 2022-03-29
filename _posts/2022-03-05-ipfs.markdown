@@ -5,7 +5,8 @@ subline: "NFTs verify the ownership of something. IPFS tells you what that somet
 show_date: "03/05/2022"
 permalink: "/blog/IPFS"
 section: "blog"
-ref_link: "/blog/IPFS"
+image: "../assets/ipfs_cover.png"
+ref_link: "https://medium.com/@kitanademidun/d00e7870a7d8"
 
 
 ---

@@ -5,7 +5,8 @@ subline: "What it is and why I'm bullish"
 show_date: "03/05/2022"
 permalink: "/blog/polygon/"
 section: "blog"
-ref_link: "/blog/polygon"
+image: "../assets/polygon_cover.png"
+ref_link: "https://medium.com/@kitanademidun/e5bd1ec2d273"
 
 
 ---

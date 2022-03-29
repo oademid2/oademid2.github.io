@@ -5,7 +5,8 @@ subline: "Looking at two metrics"
 show_date: "12/01/2018"
 permalink: "/blog/fintech"
 section: "blog"
-ref_link: "/blog/fintech"
+ref_link: "https://www.linkedin.com/pulse/landscape-fintech-nigeria-look-two-metrics-kitan-ademidun/"
+image: "../assets/fintech_cover.jpeg"
 
 
 ---
