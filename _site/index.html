@@ -5,14 +5,16 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Nuniyo' rel='stylesheet'>
 
 <style>
 
     body{ 
 
-        font-family: Helvetica, Arial, sans-serif;
         font-weight: 200;
-        font-family: Helvetica, "Palatino Linotype","Book Antiqua",Palatino,serif;
+        font-family: Helvetica, Arial, sans-serif, "Palatino Linotype","Book Antiqua",Palatino,serif;
+        font-family: "Work Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
         /* padding: 0 12%;  */
 
     }
@@ -20,7 +22,7 @@
     .website{
 
         max-width:100%;
-        padding: 0% 8%;
+        padding: 0% 6%;
         max-width: 1080px;
         margin: auto;
         overflow: scroll;
@@ -52,7 +54,7 @@
   
     }
 
-    .header-content{
+    .header-content-container{
        
         height: 20vh;
         width: 100%;
@@ -85,11 +87,11 @@
 
     .header-title{
         margin: 0;
-        font-size: 20px;
+        font-size: 16px;
         
     }
 
-    .header-name{
+    .header-name-section{
   
       /* background-color: antiquewhite; */
 
@@ -100,12 +102,12 @@
     }
    
 
-    .header-about{
+    .header-nav-section{
 
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-end;
+      align-items:  center;
       background-color: none;
       float: right;
       margin: 10px 0;
@@ -121,7 +123,7 @@
       padding: 0 20px;
 
       text-decoration: none;
-      font-size: 24px;
+      font-size: 16px;
 
     }
 
@@ -149,23 +151,40 @@
 
 @media only screen and (max-width: 420px) {
   /* For mobile phones: */
-  .header-name, .header-about{
+  .header-name-section{
     min-width:100%;
+    text-align: center;
+
   }
 
-  .header-about{
+  .header-title{
+    min-width:100%;
+    text-align: center;
+    align-items: center;
+    font-size: 4vw;
+    margin: 20px 0px;
+    padding: 0;
+  }
+
+  .header-nav-section{
     align-items: center;
     min-width:100%;
     padding: 0;
     margin: 0;
   }
 
-  .header-nav{
+  .header-content-container{
+       
+       height: auto;
+       width: 100%;
+   }
+
+  .header-nav-container{
     padding: 0;
     margin: 0;
-
     padding-right: 10px;
   }
+
 }
 
 
@@ -176,33 +195,36 @@
 <body>
 
 <div class="website">
-    <div class="header-content">
-        <div class="header-name">
-        <h1 class="header-title">    < <a href="https://twitter.com/ademidunk" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a><a href="https://github.com/oademid2" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-          <a href="https://www.linkedin.com/in/kitan-ademidun/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-          | kademidun@hotmail.com <span class="sm-icon-header">👩🏿‍💻</span>/> </h1>
-        <p class="header-socials"> 
-       
-        </p>
+    <div class="header-content-container">
+        <div class="header-name-section">
+          <h1 class="header-title">    
+            < 
+            <a href="https://twitter.com/ademidunk" target="_blank"><i class="social_icon fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://github.com/oademid2" target="_blank"><i class="social_icon fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/kitan-ademidun/" target="_blank"><i class="social_icon  fa fa-linkedin w3-hover-opacity"></i></a>
+            | kademidun@hotmail.com <span class="sm-icon-header">👩🏿‍💻</span>/> 
+          </h1>
         </div>
 
-        <div class="header-about">
-          <nav>
-            
-      
-     
+        <div class="header-nav-section">
+
     
+          <div>
+            
             <a href="/" class="header-nav" style="color:gray; text-decoration: underline;" >
-              Home</a>
+              Home
+            </a>
             <a href="/blog/"  class="header-nav" >
               Blog
             </a>
-          </nav>
+          </div>
+
+       
+
         </div>
     </div>
 
     <div class="main-content">    
-      
       <style>
 
  
@@ -211,7 +233,8 @@
         width: 100%;
         padding:5px 10px;
         border-radius: 8px;
-        font-family: Helvetica,"Palatino Linotype","Book Antiqua",Palatino,serif;
+
+        font-family: "Work Sans", "Nunito", Helvetica,"Palatino Linotype","Book Antiqua",Palatino,serif, NB International Pro,Helvetica,Helvetica Neue,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,sans-serif;
     }
 
 
@@ -233,26 +256,33 @@
     .container_about_image{
 
         margin: auto;
+        margin-right: 130px;
 
-        text-align: left;
-        width: 200px;
+        width: 120px;
+
+
     }
 
     .container_about_image img{
-        max-width: 200px;
+        max-width: 150%;
         
         border-radius: 50%;
   
     }
 
     .container_about_text{
-        max-width: 55%;
-        margin: auto;
+        min-width: none;
+        max-width: 100%;
+
+
+      
+        
     }
 
     .about_text_title{
-        font-size: 25px;
-        font-weight: bold;
+        font-size: 28px;
+        font-weight: 600;
+        /* font-weight: bold; */
 
     }
 
@@ -262,8 +292,18 @@
     }
 
     .about-me-blurb{
-        font-size: 12px;    
-        font-weight: 600;
+        font-size: 20px;    
+        
+    }
+
+    .about-highlights{
+        font-size: 16px;    
+        font-family: "Work sans ";
+        font-weight: 300;
+
+        padding: 0 0%;
+        list-style-type: none;
+
     }
 
     .panel-b{
@@ -273,20 +313,25 @@
     }
 
     .panel-title{
-        font-family: Helvetica, sans-serif;
+        color: #070707;
 
-        font-family: Helvetica, "Palatino Linotype","Book Antiqua",Palatino,serif;
-        color: #454545;
         font-weight: 300;
         font-size: 25px;
-        font-weight: 200;
+        font-weight: 700;
+        font: 'Work Sans Bold';
+        text-align: center;
+
+        margin: 0;
+        padding: 30px 0;
+
     
     }
 
     .panel-block-body{
 
+
         /* background-color: aquamarine; */
-        max-height: 450px;
+  
         width: 100%;
         overflow-y: scroll;
 
@@ -299,8 +344,9 @@
     }
 
     .panel-block{
+
         /* margin: 5px 0px; */
-        padding: 12px 9px;
+        padding: 6px 6px;
         min-height: 70px;
 
         /* border-bottom: 1px solid black; */
@@ -309,21 +355,21 @@
         align-items: center;
         min-width: 32%;
         max-width: 32%;
-        min-height: 200px;
-        max-height: 200px;
+        /* min-height: 200px;
+        max-height: 200px; */
         overflow: hidden;
 
-        margin-bottom:25px;
+        margin-bottom:15px;
 
         box-shadow:
-  0px 0px 0.4px rgba(0, 0, 0, 0.02),
-  0px 0px 1px rgba(0, 0, 0, 0.028),
-  0px 0px 1.9px rgba(0, 0, 0, 0.035),
-  0px 0px 3.4px rgba(0, 0, 0, 0.042),
-  0px 0px 6.3px rgba(0, 0, 0, 0.05),
-  0px 0px 15px rgba(0, 0, 0, 0.07)
-;
-border-radius: 8px;
+        0px 0px 0.4px rgba(0, 0, 0, 0.02),
+        0px 0px 1px rgba(0, 0, 0, 0.028),
+        0px 0px 1.9px rgba(0, 0, 0, 0.035),
+        0px 0px 3.4px rgba(0, 0, 0, 0.042),
+        0px 0px 6.3px rgba(0, 0, 0, 0.05),
+        0px 0px 15px rgba(0, 0, 0, 0.07);
+        
+        border-radius: 8px;
 
 
         
@@ -340,34 +386,40 @@ border-radius: 8px;
     }
 
 
-
-
-
     .card {
         display: flex;
         flex-direction: column;
+
+
         font-size: 12px;
-        overflow: hidden;
+
+
     }
 
     .card__cover {
-        height: 150px;
-        width: 100%;
+        min-height: 150px;
+        max-height: 150px;
         overflow: hidden;
+        
+
+        
     }
+
+    .card__cover img{
+        min-width: 100%;
+        max-width: 100%;
+
+        border-radius: 8px 8px 0 0 ;
+    }
+
 
     .card__content {
         min-height: 60px;
         max-height: 60px;
+        text-overflow: ellipsis;
         /* Take available height */
-        flex: 1;
-    }
-
-    .card__cover img{
-
-        max-width: 100%;
-        overflow-y: hidden;
-        padding: 12px 0px;
+        /* flex: 1; */
+        margin: 6px 0;
     }
 
     .card__content p{
@@ -377,16 +429,44 @@ border-radius: 8px;
     .card_content_headline{
         font-size: 12px;
         font-weight: 600;
-        font-family: Arial, Helvetica, sans-serif;
     }
     .card_content_subline{
-        font-size: 12px;
+        font-size: 10px;
         color: #454545;
     }
-    @media only screen and (max-width: 420px) {
-        /* For mobile phones: */
-       
 
+    .container_about_image{
+          
+    }
+
+    @media only screen and (max-width: 420px) {
+        
+        /* For mobile phones: */
+        .container_about_image{
+            display: none;
+        }
+
+        .about-highlights{
+            min-width: 100%;
+            text-align: left;
+        }
+        .container_about_text{
+            min-width: 100%;
+            text-align: center;
+            height: auto;
+        }
+
+        .panel-title{
+            text-align: center;
+        }
+
+        .panel-b{
+            margin: 0;
+        }
+
+        .panel-block{
+            min-width: 100%;
+        }
 
     }
 
@@ -400,24 +480,31 @@ border-radius: 8px;
         <div class="panel panel-about">
 
               
-            <div class="container_about_image">
-                <img src="../assets/me2.jpeg">
-            </div>
+            
 
 
                
                 <div class="container_about_text">
-                    <h4 class="about_text_title">HI, I'M KITAN 👋🏿 </h4>
-                    I work in consulting and studied computer engineering & business. I'm most excited by problems that are of society or economic design. Currently learning a lot about crypto, payments and agriculture.
-                    Trying to figure out what my role is in making the world a better place. 
+                    <h4 class="about_text_title">Hi, I'm Kitan 👋🏿 </h4>
+                    <ul class="about-highlights">
+                        <li>🎓 Computer engineering & business administration</li>
+                        <li>💼 Work in management consulting</li>
+                        <li>💡 Learning about emerging markets, crypto, payments & agriculture</li>
+                        <li>💫 Goal is to use my skills to improve the global quality of life</li>
+                        <li>🛠 Some technical skills are Python, SQL, Javascript, Web dev, Excel modelling</li>
+        
+                    </ul>
+                </div>
+                <div class="container_about_image">
+                    <img src="../assets/me2.jpeg">
                 </div>
            
  
         </div>
     
     
-        <div class="panel panel-b">
-            <h3 class="panel-title">Things I've worked on</h3>
+        <div class=" panel panel-b">
+            <h3 class="panel-title">My Projects</h3>
 
 
             <div class="panel-block-body">
@@ -469,7 +556,7 @@ border-radius: 8px;
               
 
                 <div  class="panel-block">
-                    <a href="/blog/fintech" target="_blank" class="panel-block-a">
+                    <a href="https://www.linkedin.com/pulse/landscape-fintech-nigeria-look-two-metrics-kitan-ademidun/" target="_blank" class="panel-block-a">
                     <div class="card">
                         <!-- Cover -->
                         <div class="card__cover">
@@ -488,6 +575,75 @@ border-radius: 8px;
             </div>
             
          
+              
+
+              
+
+              <div  class="panel-block">
+                  <a href="https://medium.com/@kitanademidun/e5bd1ec2d273" target="_blank" class="panel-block-a">
+                  <div class="card">
+                      <!-- Cover -->
+                      <div class="card__cover">
+                          <img src="../assets/polygon_cover.png">
+                 
+                      </div>
+                  
+                      <!-- Content -->
+                      <div class="card__content">
+                          <p class="card_content_headline">Polygon is the scaling solution Ethereum needs?</p>
+                          <p class="card_content_subline">What it is and why I'm bullish</p>
+                      </div>
+                      
+                  </div>
+              </a>
+          </div>
+          
+       
+            
+
+              <div  class="panel-block">
+                  <a href="https://medium.com/@kitanademidun/d00e7870a7d8" target="_blank" class="panel-block-a">
+                  <div class="card">
+                      <!-- Cover -->
+                      <div class="card__cover">
+                          <img src="../assets/ipfs_cover.png">
+                 
+                      </div>
+                  
+                      <!-- Content -->
+                      <div class="card__content">
+                          <p class="card_content_headline">IPFS can give more credibility to NFTs as proof of ownership</p>
+                          <p class="card_content_subline">NFTs verify the ownership of something. IPFS tells you what that something is.</p>
+                      </div>
+                      
+                  </div>
+              </a>
+          </div>
+          
+       
+            
+
+              <div  class="panel-block">
+                  <a href="https://www.linkedin.com/pulse/landscape-fintech-nigeria-look-two-metrics-kitan-ademidun/" target="_blank" class="panel-block-a">
+                  <div class="card">
+                      <!-- Cover -->
+                      <div class="card__cover">
+                          <img src="../assets/fintech_cover.jpeg">
+                 
+                      </div>
+                  
+                      <!-- Content -->
+                      <div class="card__content">
+                          <p class="card_content_headline">The landscape is set for Fintech in Nigeria (2018)</p>
+                          <p class="card_content_subline">Looking at two metrics</p>
+                      </div>
+                      
+                  </div>
+              </a>
+          </div>
+          
+       
+            
               
                 
 

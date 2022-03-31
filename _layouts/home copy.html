@@ -9,8 +9,8 @@ layout: default
         width: 100%;
         padding:5px 10px;
         border-radius: 8px;
-
-        font-family: "Work Sans", "Nunito", Helvetica,"Palatino Linotype","Book Antiqua",Palatino,serif, NB International Pro,Helvetica,Helvetica Neue,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,sans-serif;
+        font-family: Helvetica,"Palatino Linotype","Book Antiqua",Palatino,serif;
+        font-family: NB International Pro,Helvetica,Helvetica Neue,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,sans-serif;
     }
 
 
@@ -32,11 +32,9 @@ layout: default
     .container_about_image{
 
         margin: auto;
-        margin-right: 130px;
 
-        width: 120px;
-
-
+        text-align: left;
+        width: 100px;
     }
 
     .container_about_image img{
@@ -47,17 +45,13 @@ layout: default
     }
 
     .container_about_text{
-        min-width: none;
-        max-width: 100%;
-
-
+        max-width: 55%;
       
         
     }
 
     .about_text_title{
-        font-size: 28px;
-        font-weight: 600;
+        font-size: 25px;
         /* font-weight: bold; */
 
     }
@@ -68,14 +62,12 @@ layout: default
     }
 
     .about-me-blurb{
-        font-size: 20px;    
-        
+        font-size: 12px;    
+        font-weight: 600;
     }
 
     .about-highlights{
-        font-size: 16px;    
-        font-family: "Work sans ";
-        font-weight: 300;
+        font-size: 12px;
 
         padding: 0 0%;
         list-style-type: none;
@@ -89,25 +81,17 @@ layout: default
     }
 
     .panel-title{
-        color: #070707;
-
+        color: #454545;
         font-weight: 300;
         font-size: 25px;
-        font-weight: 700;
-        font: 'Work Sans Bold';
-        text-align: center;
-
-        margin: 0;
-        padding: 30px 0;
-
+        font-weight: 300;
     
     }
 
     .panel-block-body{
 
-
         /* background-color: aquamarine; */
-  
+        max-height: 450px;
         width: 100%;
         overflow-y: scroll;
 
@@ -120,9 +104,8 @@ layout: default
     }
 
     .panel-block{
-
         /* margin: 5px 0px; */
-        padding: 6px 6px;
+        padding: 12px 9px;
         min-height: 70px;
 
         /* border-bottom: 1px solid black; */
@@ -131,21 +114,21 @@ layout: default
         align-items: center;
         min-width: 32%;
         max-width: 32%;
-        /* min-height: 200px;
-        max-height: 200px; */
+        min-height: 200px;
+        max-height: 200px;
         overflow: hidden;
 
-        margin-bottom:15px;
+        margin-bottom:25px;
 
         box-shadow:
-        0px 0px 0.4px rgba(0, 0, 0, 0.02),
-        0px 0px 1px rgba(0, 0, 0, 0.028),
-        0px 0px 1.9px rgba(0, 0, 0, 0.035),
-        0px 0px 3.4px rgba(0, 0, 0, 0.042),
-        0px 0px 6.3px rgba(0, 0, 0, 0.05),
-        0px 0px 15px rgba(0, 0, 0, 0.07);
-        
-        border-radius: 8px;
+  0px 0px 0.4px rgba(0, 0, 0, 0.02),
+  0px 0px 1px rgba(0, 0, 0, 0.028),
+  0px 0px 1.9px rgba(0, 0, 0, 0.035),
+  0px 0px 3.4px rgba(0, 0, 0, 0.042),
+  0px 0px 6.3px rgba(0, 0, 0, 0.05),
+  0px 0px 15px rgba(0, 0, 0, 0.07)
+;
+border-radius: 8px;
 
 
         
@@ -162,40 +145,34 @@ layout: default
     }
 
 
+
+
+
     .card {
         display: flex;
         flex-direction: column;
-
-
         font-size: 12px;
-
-
+        overflow: hidden;
     }
 
     .card__cover {
-        min-height: 150px;
-        max-height: 150px;
+        height: 150px;
+        width: 100%;
         overflow: hidden;
-        
-
-        
     }
-
-    .card__cover img{
-        min-width: 100%;
-        max-width: 100%;
-
-        border-radius: 8px 8px 0 0 ;
-    }
-
 
     .card__content {
         min-height: 60px;
         max-height: 60px;
-        text-overflow: ellipsis;
         /* Take available height */
-        /* flex: 1; */
-        margin: 6px 0;
+        flex: 1;
+    }
+
+    .card__cover img{
+
+        max-width: 100%;
+        overflow-y: hidden;
+        padding: 12px 0px;
     }
 
     .card__content p{
@@ -205,15 +182,18 @@ layout: default
     .card_content_headline{
         font-size: 12px;
         font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
     }
     .card_content_subline{
-        font-size: 10px;
+        font-size: 12px;
         color: #454545;
     }
 
-    .container_about_image{
-          
-    }
+          .container_about_image{
+
+            display: none;
+            
+        }
 
     @media only screen and (max-width: 420px) {
         
@@ -256,12 +236,14 @@ layout: default
         <div class="panel panel-about">
 
               
-            
+            <div class="container_about_image">
+                <img src="../assets/me2.jpeg">
+            </div>
 
 
                
                 <div class="container_about_text">
-                    <h4 class="about_text_title">Hi, I'm Kitan 👋🏿 </h4>
+                    <h4 class="about_text_title">HI, I'M KITAN 👋🏿 </h4>
                     <ul class="about-highlights">
                         <li>🎓 Computer engineering & business administration</li>
                         <li>💼 Work in management consulting</li>
@@ -271,15 +253,12 @@ layout: default
         
                     </ul>
                 </div>
-                <div class="container_about_image">
-                    <img src="../assets/me2.jpeg">
-                </div>
            
  
         </div>
     
     
-        <div class=" panel panel-b">
+        <div class="panel panel-b">
             <h3 class="panel-title">My Projects</h3>
 
 
