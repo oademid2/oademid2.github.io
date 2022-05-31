@@ -5,8 +5,8 @@ layout: default
 
  
     .panel{
-        margin: 0;
         width: 100%;
+        margin: 0;
         padding:5px 10px;
         border-radius: 8px;
 
@@ -16,51 +16,38 @@ layout: default
 
     .panel-about{
 
+        width: 100%;
+        display: flex; 
+        justify-content: space-between;
+
         background-color:rgb(255, 255, 255);
         color: #454545;
         font-size: 12px;
-
-               
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        height: auto;
-        
+        /* flex-wrap: wrap;  */
+        /* height: auto; */
+        /* border: 2px solid black; */
     }
 
     .container_about_image{
-
-        margin: auto;
-        margin-right: 130px;
-
-        width: 120px;
-
-
+        max-width: 20%;
+        text-align: center;
     }
 
     .container_about_image img{
-        max-width: 150%;
-        
+        max-width: 80%;  
         border-radius: 50%;
-  
     }
 
     .container_about_text{
         min-width: none;
-        max-width: 100%;
-        border: 2px solid #070707;
-
-
-      
-        
+        max-width:75%;
+        /* border: 2px solid #070707; */
     }
 
     .about_text_title{
         font-size: 28px;
         font-weight: 600;
         /* font-weight: bold; */
-
     }
 
     .debug{
@@ -70,21 +57,19 @@ layout: default
 
     .about-me-blurb{
         font-size: 20px;    
-        
     }
 
     .about-highlights{
+        padding: 0 0%;
+
+        list-style-type: none;
+
         font-size: 16px;    
         font-family: "Helvetica";
         font-weight: 100;
-
-        padding: 0 0%;
-        list-style-type: none;
-
     }
 
     .panel-b{
-
         margin: 40px 0px;
         width: 100%;
     }
@@ -96,7 +81,7 @@ layout: default
         font-size: 25px;
         font-weight: 700;
         font: 'Work Sans Bold';
-        text-align: center;
+        text-align: left;
 
         margin: 0;
         padding: 30px 0;
@@ -272,11 +257,9 @@ layout: default
                 <div class="container_about_text">
                     <h4 class="about_text_title">Hi, I'm Kitan 👋🏿 </h4>
                     <ul class="about-highlights">
-                        <li>🎓 Computer engineering & business administration</li>
-                        <li>💼 Work in management consulting</li>
-                        <li>💡 Learning about emerging markets, crypto, payments & agriculture</li>
-                        <li>💫 Goal is to use my skills to improve the global quality of life</li>
-                        <li>🛠 Some technical skills are Python, SQL, Javascript, Web dev, Excel modelling</li>
+                        I work as a management consultant on private capital & digital projects. 
+                        I like thinking about why things are the way they are and where things will be in the future. 
+                        I'm also a dev and enjoy coding. My ultimate life goal is to help improve the globl quality of life.
         
                     </ul>
                 </div>
