@@ -16,21 +16,31 @@
         font-family: Helvetica, Arial, sans-serif, "Palatino Linotype","Book Antiqua",Palatino,serif;
         font-family: "Work Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
         /* padding: 0 12%;  */
+        background-color: rgb(249, 247, 247);
+
 
     }
 
+    .bg-grey{
+    background-color: rgb(249, 247, 247);
+    }
+
+    .bg-white{
+        background-color: white;
+    }
     .website{
 
         max-width:100%;
-        padding: 0% 6%;
-        max-width: 1080px;
+        padding: 0% 0%;
+        /* max-width: 1080px; */
         margin: auto;
         overflow: scroll;
 
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
+        background-color: blanchedalmond;
         
-        /* background-color: rgb(160, 255, 225); */
+        background-color: rgb(249, 247, 247);
 
     }
 
@@ -48,7 +58,7 @@
 
         /* display: flex; */
         /* justify-content: space-between; */
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
 
         /* background-color: rgb(221, 186, 255); */
   
@@ -115,7 +125,7 @@
       border-radius: 8px;
     
       padding-left: 70px;
-      margin-left: 15px;
+      margin-left: 10px;
 
 
     } 
@@ -196,6 +206,7 @@
 <body>
 
 <div class="website">
+  <div class="wrapper">
     <div class="header-content-container">
         <div class="header-name-section">
           <h1 class="header-title">    
@@ -224,6 +235,7 @@
 
         </div>
     </div>
+  </div>
 
     <div class="main-content">    
       <style>
@@ -245,33 +257,36 @@
         display: flex; 
         justify-content: space-between;
 
-        background-color:rgb(255, 255, 255);
         color: #454545;
         font-size: 12px;
+        padding: 0px 0px 30px 0px;
         /* flex-wrap: wrap;  */
         /* height: auto; */
         /* border: 2px solid black; */
     }
 
     .container_about_image{
-        max-width: 20%;
-        text-align: center;
+        max-width: 40%;
+        text-align: left;
+        margin-right:25px;
     }
 
     .container_about_image img{
-        max-width: 80%;  
-        border-radius: 50%;
+        max-width: 100%; 
+        max-height: 100%; 
+        max-height:200px;
+        border-radius: 8%;
     }
 
     .container_about_text{
         min-width: none;
-        max-width:75%;
+        max-width:70%;
         /* border: 2px solid #070707; */
     }
 
     .about_text_title{
-        font-size: 28px;
-        font-weight: 600;
+        font-size: 24px;
+        font-weight: 500;
         /* font-weight: bold; */
     }
 
@@ -281,7 +296,7 @@
     }
 
     .about-me-blurb{
-        font-size: 20px;    
+        font-size: 14px;    
     }
 
     .about-highlights{
@@ -295,7 +310,7 @@
     }
 
     .panel-b{
-        margin: 40px 0px;
+        margin: 0px 0px;
         width: 100%;
     }
 
@@ -309,7 +324,7 @@
         text-align: left;
 
         margin: 0;
-        padding: 30px 0;
+        padding: 10px 0;
 
     
     }
@@ -384,8 +399,9 @@
     }
 
     .card__cover {
-        min-height: 150px;
-        max-height: 150px;
+        min-height: 100px;
+        max-height: 100px;
+    
         overflow: hidden;
         
 
@@ -393,8 +409,10 @@
     }
 
     .card__cover img{
-        min-width: 100%;
-        max-width: 100%;
+        /* min-width: 100%; */
+        max-width: 100%; 
+        max-height: 100%;
+        overflow: hidden;
 
         border-radius: 8px 8px 0 0 ;
     }
@@ -465,6 +483,13 @@
 
     }
 
+    .wrapper{
+        width:100%;
+        padding:0% 12%;
+    }
+
+
+
 
 </style>
 
@@ -472,6 +497,7 @@
 
 
 
+    <div class="wrapper bg-grey">
         <div class="panel panel-about">
 
               
@@ -482,34 +508,36 @@
                 <div class="container_about_text">
                     <h4 class="about_text_title">Hi, I'm Kitan 👋🏿 </h4>
                     <ul class="about-highlights">
-                        I work as a management consultant on private capital & digital projects. 
-                        I like thinking about why things are the way they are and where things will be in the future. 
-                        I'm also a dev and enjoy coding. My ultimate life goal is to help improve the globl quality of life.
+                        <li>💼 I work as a management consultant on private capital & digital projects</li>
+                        <li>🧠 I enjoy thinking about why things are the way they are and where things will be in the future.</li>
+                        <li>🌟 My life goal is to help improve the global quality of life.</li>
+                        <li>👩🏿‍💻 Dev work on weeekends</li>
         
                     </ul>
                 </div>
                 <div class="container_about_image">
-                    <img src="../assets/me2.jpeg">
+                    <img src="../assets/me-sun.png">
                 </div>
            
  
         </div>
-    
-    
+    </div>
+    <div class="wrapper bg-white">
         <div class=" panel panel-b">
-            <h3 class="panel-title">My Projects</h3>
+            <h3 class="panel-title">Articles & Blog Posts</h3>
 
 
             <div class="panel-block-body">
 
                 
+                
 
                 <div  class="panel-block">
-                    <a href="https://medium.com/@kitanademidun/the-crypto-liberation-from-government-abfbacd6aaaf" target="_blank" class="panel-block-a">
+                    <a href= https://medium.com/@kitanademidun/the-crypto-liberation-from-government-abfbacd6aaaf target="_blank" class="panel-block-a">
                     <div class="card">
                         <!-- Cover -->
                         <div class="card__cover">
-                            <img src="../assets/crypto_liberation_cover.jpeg">
+                            <img src=../assets/crypto_liberation_cover.jpeg>
                    
                         </div>
                     
@@ -520,18 +548,19 @@
                         </div>
                         
                     </div>
-                </a>
-            </div>
+                    </a>
+                </div>
             
-         
-              
+
+
+                
 
                 <div  class="panel-block">
-                    <a href="https://www.linkedin.com/pulse/landscape-fintech-nigeria-look-two-metrics-kitan-ademidun/" target="_blank" class="panel-block-a">
+                    <a href= https://www.linkedin.com/pulse/landscape-fintech-nigeria-look-two-metrics-kitan-ademidun/ target="_blank" class="panel-block-a">
                     <div class="card">
                         <!-- Cover -->
                         <div class="card__cover">
-                            <img src="../assets/fintech_cover.jpeg">
+                            <img src=../assets/fintech_cover.jpeg>
                    
                         </div>
                     
@@ -542,55 +571,35 @@
                         </div>
                         
                     </div>
-                </a>
-            </div>
+                    </a>
+                </div>
             
-         
-              
+
+
+                
 
                 <div  class="panel-block">
-                    <a href="https://medium.com/@kitanademidun/d00e7870a7d8" target="_blank" class="panel-block-a">
+                    <a href= https://medium.com/@kitanademidun/e5bd1ec2d273 target="_blank" class="panel-block-a">
                     <div class="card">
                         <!-- Cover -->
                         <div class="card__cover">
-                            <img src="../assets/ipfs_cover.png">
+                            <img src=../assets/polygon_cover.png>
                    
                         </div>
                     
                         <!-- Content -->
                         <div class="card__content">
-                            <p class="card_content_headline">IPFS can give more credibility to NFTs as proof of ownership</p>
-                            <p class="card_content_subline">NFTs verify the ownership of something. IPFS tells you what that something is.</p>
-                        </div>
-                        
-                    </div>
-                </a>
-            </div>
-            
-         
-              
-
-                <div  class="panel-block">
-                    <a href="https://medium.com/@kitanademidun/e5bd1ec2d273" target="_blank" class="panel-block-a">
-                    <div class="card">
-                        <!-- Cover -->
-                        <div class="card__cover">
-                            <img src="../assets/polygon_cover.png">
-                   
-                        </div>
-                    
-                        <!-- Content -->
-                        <div class="card__content">
-                            <p class="card_content_headline">Polygon is the scaling solution Ethereum needs?</p>
+                            <p class="card_content_headline">Polygon is the scaling solution Ethereum needs</p>
                             <p class="card_content_subline">What it is and why I'm bullish</p>
                         </div>
                         
                     </div>
-                </a>
-            </div>
+                    </a>
+                </div>
             
-         
-              
+
+
+                
 
            
                 
@@ -599,6 +608,99 @@
             
             </div>
         </div>
+    </div>
+
+    
+    <div class="wrapper bg-white">
+
+    
+        <div class=" panel panel-b">
+            <h3 class="panel-title">Hackathons & projects</h3>
+
+
+            <div class="panel-block-body">
+
+                
+                
+
+                <div  class="panel-block">
+                    <a href= https://medium.com/@kitanademidun/e5bd1ec2d273 target="_blank" class="panel-block-a">
+                    <div class="card">
+                        <!-- Cover -->
+                        <div class="card__cover">
+                            <img src=../assets/activate-miami.jpeg>
+                   
+                        </div>
+                    
+                        <!-- Content -->
+                        <div class="card__content">
+                            <p class="card_content_headline">ShaDonna's List</p>
+                            <p class="card_content_subline">On-chain glassdoor for web 3 companies</p>
+                        </div>
+                        
+                    </div>
+                    </a>
+                </div>
+            
+
+
+                
+
+                <div  class="panel-block">
+                    <a href= https://medium.com/@kitanademidun/e5bd1ec2d273 target="_blank" class="panel-block-a">
+                    <div class="card">
+                        <!-- Cover -->
+                        <div class="card__cover">
+                            <img src=../assets/eth_nyc.png>
+                   
+                        </div>
+                    
+                        <!-- Content -->
+                        <div class="card__content">
+                            <p class="card_content_headline">ETH NEWYORK - 3rd Place ENS Category</p>
+                            <p class="card_content_subline">Update all your crypto socials at once</p>
+                        </div>
+                        
+                    </div>
+                    </a>
+                </div>
+            
+
+
+                
+
+                <div  class="panel-block">
+                    <a href= https://github.com/oademid2/friends-on-spotify target="_blank" class="panel-block-a">
+                    <div class="card">
+                        <!-- Cover -->
+                        <div class="card__cover">
+                            <img src=../assets/spotify.png>
+                   
+                        </div>
+                    
+                        <!-- Content -->
+                        <div class="card__content">
+                            <p class="card_content_headline">Project - Friends on Spotify</p>
+                            <p class="card_content_subline">Find music similarities with your friends</p>
+                        </div>
+                        
+                    </div>
+                    </a>
+                </div>
+            
+
+
+                
+
+           
+                
+
+
+            
+            </div>
+        </div>
+
+    </div>
 
 
     

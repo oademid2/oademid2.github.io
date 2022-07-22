@@ -20,33 +20,36 @@ layout: default
         display: flex; 
         justify-content: space-between;
 
-        background-color:rgb(255, 255, 255);
         color: #454545;
         font-size: 12px;
+        padding: 0px 0px 30px 0px;
         /* flex-wrap: wrap;  */
         /* height: auto; */
         /* border: 2px solid black; */
     }
 
     .container_about_image{
-        max-width: 20%;
-        text-align: center;
+        max-width: 40%;
+        text-align: left;
+        margin-right:25px;
     }
 
     .container_about_image img{
-        max-width: 80%;  
-        border-radius: 50%;
+        max-width: 100%; 
+        max-height: 100%; 
+        max-height:200px;
+        border-radius: 8%;
     }
 
     .container_about_text{
         min-width: none;
-        max-width:75%;
+        max-width:70%;
         /* border: 2px solid #070707; */
     }
 
     .about_text_title{
-        font-size: 28px;
-        font-weight: 600;
+        font-size: 24px;
+        font-weight: 500;
         /* font-weight: bold; */
     }
 
@@ -56,7 +59,7 @@ layout: default
     }
 
     .about-me-blurb{
-        font-size: 20px;    
+        font-size: 14px;    
     }
 
     .about-highlights{
@@ -70,7 +73,7 @@ layout: default
     }
 
     .panel-b{
-        margin: 40px 0px;
+        margin: 0px 0px;
         width: 100%;
     }
 
@@ -84,7 +87,7 @@ layout: default
         text-align: left;
 
         margin: 0;
-        padding: 30px 0;
+        padding: 10px 0;
 
     
     }
@@ -159,8 +162,9 @@ layout: default
     }
 
     .card__cover {
-        min-height: 150px;
-        max-height: 150px;
+        min-height: 100px;
+        max-height: 100px;
+    
         overflow: hidden;
         
 
@@ -168,8 +172,10 @@ layout: default
     }
 
     .card__cover img{
-        min-width: 100%;
-        max-width: 100%;
+        /* min-width: 100%; */
+        max-width: 100%; 
+        max-height: 100%;
+        overflow: hidden;
 
         border-radius: 8px 8px 0 0 ;
     }
@@ -240,6 +246,13 @@ layout: default
 
     }
 
+    .wrapper{
+        width:100%;
+        padding:0% 12%;
+    }
+
+
+
 
 </style>
 
@@ -247,6 +260,7 @@ layout: default
 
 
 
+    <div class="wrapper bg-grey">
         <div class="panel panel-about">
 
               
@@ -257,49 +271,52 @@ layout: default
                 <div class="container_about_text">
                     <h4 class="about_text_title">Hi, I'm Kitan 👋🏿 </h4>
                     <ul class="about-highlights">
-                        I work as a management consultant on private capital & digital projects. 
-                        I like thinking about why things are the way they are and where things will be in the future. 
-                        I'm also a dev and enjoy coding. My ultimate life goal is to help improve the globl quality of life.
+                        <li>💼 I work as a management consultant on private capital & digital projects</li>
+                        <li>🧠 I enjoy thinking about why things are the way they are and where things will be in the future.</li>
+                        <li>🌟 My life goal is to help improve the global quality of life.</li>
+                        <li>👩🏿‍💻 Dev work on weeekends</li>
         
                     </ul>
                 </div>
                 <div class="container_about_image">
-                    <img src="../assets/me2.jpeg">
+                    <img src="../assets/me-sun.png">
                 </div>
            
  
         </div>
-    
-    
+    </div>
+    <div class="wrapper bg-white">
         <div class=" panel panel-b">
-            <h3 class="panel-title">My Projects</h3>
+            <h3 class="panel-title">Articles & Blog Posts</h3>
 
 
             <div class="panel-block-body">
 
-                {% for post in site.posts %}
+                {% assign projects = site.data.projects  | where: "type", "article" %}
+                {% for item in projects | find: "type", "article" %}
 
                 <div  class="panel-block">
-                    <a href="{{post.ref_link}}" target="_blank" class="panel-block-a">
+                    <a href= {{item.link}} target="_blank" class="panel-block-a">
                     <div class="card">
                         <!-- Cover -->
                         <div class="card__cover">
-                            <img src="{{ post.image }}">
+                            <img src={{item.photo}}>
                    
                         </div>
                     
                         <!-- Content -->
                         <div class="card__content">
-                            <p class="card_content_headline">{{ post.headline }}</p>
-                            <p class="card_content_subline">{{ post.subline }}</p>
+                            <p class="card_content_headline">{{item.headline}}</p>
+                            <p class="card_content_subline">{{item.subline}}</p>
                         </div>
                         
                     </div>
-                </a>
-            </div>
+                    </a>
+                </div>
             
-         
-              {% endfor %}
+
+
+                {% endfor %}
 
            
                 
@@ -308,6 +325,53 @@ layout: default
             
             </div>
         </div>
+    </div>
+
+    
+    <div class="wrapper bg-white">
+
+    
+        <div class=" panel panel-b">
+            <h3 class="panel-title">Hackathons & projects</h3>
+
+
+            <div class="panel-block-body">
+
+                {% assign projects = site.data.projects  | where: "type", "build" %}
+                {% for item in projects | find: "type", "article" %}
+
+                <div  class="panel-block">
+                    <a href= {{item.link}} target="_blank" class="panel-block-a">
+                    <div class="card">
+                        <!-- Cover -->
+                        <div class="card__cover">
+                            <img src={{item.photo}}>
+                   
+                        </div>
+                    
+                        <!-- Content -->
+                        <div class="card__content">
+                            <p class="card_content_headline">{{item.headline}}</p>
+                            <p class="card_content_subline">{{item.subline}}</p>
+                        </div>
+                        
+                    </div>
+                    </a>
+                </div>
+            
+
+
+                {% endfor %}
+
+           
+                
+
+
+            
+            </div>
+        </div>
+
+    </div>
 
 
     

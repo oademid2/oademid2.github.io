@@ -16,21 +16,31 @@
         font-family: Helvetica, Arial, sans-serif, "Palatino Linotype","Book Antiqua",Palatino,serif;
         font-family: "Work Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
         /* padding: 0 12%;  */
+        background-color: rgb(249, 247, 247);
+
 
     }
 
+    .bg-grey{
+    background-color: rgb(249, 247, 247);
+    }
+
+    .bg-white{
+        background-color: white;
+    }
     .website{
 
         max-width:100%;
-        padding: 0% 6%;
-        max-width: 1080px;
+        padding: 0% 0%;
+        /* max-width: 1080px; */
         margin: auto;
         overflow: scroll;
 
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
+        background-color: blanchedalmond;
         
-        /* background-color: rgb(160, 255, 225); */
+        background-color: rgb(249, 247, 247);
 
     }
 
@@ -48,7 +58,7 @@
 
         /* display: flex; */
         /* justify-content: space-between; */
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
 
         /* background-color: rgb(221, 186, 255); */
   
@@ -115,7 +125,7 @@
       border-radius: 8px;
     
       padding-left: 70px;
-      margin-left: 15px;
+      margin-left: 10px;
 
 
     } 
@@ -196,6 +206,7 @@
 <body>
 
 <div class="website">
+  <div class="wrapper">
     <div class="header-content-container">
         <div class="header-name-section">
           <h1 class="header-title">    
@@ -224,52 +235,20 @@
 
         </div>
     </div>
+  </div>
 
     <div class="main-content">    
-      <style>
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-    .article{
-        font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
-        font-size: 1em;
-        line-height: 1.5;
-        color: rgb(82, 80, 80);
-        width: 100%;
-        max-width: 800px;
-        max-height: 70vh;
-        overflow: scroll;
-    
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Fintech</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2022-01-03T00:00:00-05:00" itemprop="datePublished">Jan 3, 2022
+      </time></p>
+  </header>
 
-    }
-    .headline{
-        font-size: 30px;
-        padding: 0;
-        margin: 0;
-        color: black;
-
-    }
-    .subline{
-        font-size: 18px;
-        padding: 0;
-        margin: 0;
-        color:grey;
-        margin-bottom: 50px;
-
-    }
-    .content{
-        font-weight: 200;
-    }
-
-</style>
-
-
-
-<div class="article">
-
-    <h1 class="headline">The landscape is set for Fintech in Nigeria (2018)</h1>
-    <p class="subline" >Looking at two metrics</p>
-
-    <div class="content">
-        <p>With technology catapulting the accessibility of financial services in economies such as the U.S. and Canada, the FinTech industry shows promising signs of growth. Intuitively it may seem more practical for investors to focus only on developed and prospering countries but the opportunity for individuals focused on innovation and pioneering an industry could lie in developing countries like Nigeria.</p>
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>With technology catapulting the accessibility of financial services in economies such as the U.S. and Canada, the FinTech industry shows promising signs of growth. Intuitively it may seem more practical for investors to focus only on developed and prospering countries but the opportunity for individuals focused on innovation and pioneering an industry could lie in developing countries like Nigeria.</p>
 
 <p><em>Need for financial inclusivity</em></p>
 
@@ -291,9 +270,8 @@
 
 <p>Companies looking to become industry pioneers could find an untapped market in Nigeria. With a lack of financial accessibility there is a need for technology to be leveraged with financial services. It is important that those entering the market cater to the capacity, while mobile phones are largely used, these entering the market must understand at what level of advancement in technology exists. The ability for a company to successfully cater to the technological capacity, as seen in Kenya’s M-Pesa, can find a way to transform extremely low wealth communities into active engagers of their financial service.</p>
 
-    </div>
-
-</div>
+  </div><a class="u-url" href="/blog/fintech" hidden></a>
+</article>
 
     </div>
 

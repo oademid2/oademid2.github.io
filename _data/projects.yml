@@ -1,0 +1,49 @@
+- name: one
+  type: article
+  link: https://medium.com/@kitanademidun/the-crypto-liberation-from-government-abfbacd6aaaf
+  photo: ../assets/crypto_liberation_cover.jpeg
+  headline: How crypto provides people an exit option from broken government
+  subline: The crypto liberation from broken government 
+  rank: 1
+- name: two
+  type: article
+  link: https://www.linkedin.com/pulse/landscape-fintech-nigeria-look-two-metrics-kitan-ademidun/
+  photo: ../assets/fintech_cover.jpeg
+  headline: The landscape is set for Fintech in Nigeria (2018)
+  subline: Looking at two metrics 
+  rank: 2
+- name: two
+  type: hide
+  link: https://medium.com/@kitanademidun/d00e7870a7d8
+  photo: ../assets/ipfs_cover.png
+  headline: IPFS can give more credibility to NFTs as proof of ownership
+  subline: NFTs verify the ownership of something. IPFS tells you what that something is.
+  rank: 3
+- name: two
+  type: article
+  link: https://medium.com/@kitanademidun/e5bd1ec2d273
+  photo: ../assets/polygon_cover.png
+  headline: Polygon is the scaling solution Ethereum needs
+  subline: What it is and why I'm bullish
+  rank: 3
+- name: two
+  type: build
+  link: https://medium.com/@kitanademidun/e5bd1ec2d273
+  photo: ../assets/activate-miami.jpeg
+  headline: ShaDonna's List
+  subline: On-chain glassdoor for web 3 companies
+  rank: 3
+- name: two
+  type: build
+  link: https://medium.com/@kitanademidun/e5bd1ec2d273
+  photo: ../assets/eth_nyc.png
+  headline: ETH NEWYORK - 3rd Place ENS Category
+  subline: Update all your crypto socials at once
+  rank: 3
+- name: two
+  type: build
+  link: https://github.com/oademid2/friends-on-spotify
+  photo: ../assets/spotify.png
+  headline: Project - Friends on Spotify
+  subline: Find music similarities with your friends
+  rank: 3
